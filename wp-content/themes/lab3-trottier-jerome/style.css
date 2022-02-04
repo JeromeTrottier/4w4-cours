@@ -365,7 +365,7 @@ html {
 .formation__liste {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .formation__cours {
@@ -376,8 +376,8 @@ html {
   box-shadow: 5px 5px 0px 0px black;
   display: flex;
   flex-direction: column;
+  flex: 1 0 40%;
   padding: 10px;
-  width: 22%;
   transition: box-shadow 0.5s, border 0.5s;
 }
 
@@ -445,12 +445,12 @@ html {
 
 .site .site__barre {
   grid-area: sidebar;
-  background-color: #7fffd9;
+  background-color: #ecff7f;
 }
 
 .site .site__main {
   grid-area: main;
-  background-color: #7fffd9;
+  background-color: #aeff7f;
 }
 
 .site .site__footer {
