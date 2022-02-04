@@ -357,18 +357,18 @@ html {
   flex-direction: column;
 }
 
-.formation__titre {
+.formation .formation__titre {
   font-size: 2rem;
   text-align: center;
 }
 
-.formation__liste {
+.formation .formation__liste {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.formation__cours {
+.formation .formation__cours {
   margin: 20px;
   background-color: white;
   border: 0px solid transparent;
@@ -381,7 +381,7 @@ html {
   transition: box-shadow 0.5s, border 0.5s;
 }
 
-.formation__cours:hover {
+.formation .formation__cours:hover {
   box-shadow: 0px 0px 0px grey;
   border: 2px black solid;
 }
@@ -420,22 +420,24 @@ html {
   font-size: 1.5rem;
 }
 
-.footer {
+.site__footer {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   background-color: grey;
   color: white;
   padding: 1rem;
 }
 
-.footer__titre, .footer__presentation, .footer__author {
+.site__footer .footer__titre,
+.site__footer .footer__presentation,
+.site__footer .footer__author {
   text-align: center;
 }
 
 .site {
   display: grid;
   gap: 20px;
-  grid-template-columns: auto 20%;
-  grid-template-areas: "header header" "main sidebar" "footer footer";
+  grid-template-columns: 20% auto;
+  grid-template-areas: "header header" "sidebar main" "footer footer";
 }
 
 .site .site__header {
