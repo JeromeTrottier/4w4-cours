@@ -431,4 +431,10 @@ body {
 .footer__titre, .footer__presentation, .footer__author {
   text-align: center;
 }
+
+body.home {
+  background-color: #7fffd9;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+}
 /*# sourceMappingURL=style.css.map */
