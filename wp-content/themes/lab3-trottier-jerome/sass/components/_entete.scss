@@ -1,0 +1,12 @@
+.entete {
+  background-color: $color__background-entete;
+  text-align: center;
+  &__titre {
+    font-size: 3em;
+    font-family: $font__entete;
+  }
+
+  &__desc {
+    font-size: 1.5rem;
+  }
+}

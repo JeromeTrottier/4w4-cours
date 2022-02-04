@@ -1,0 +1,11 @@
+.footer {
+  font-family: $font__entete;
+  background-color: $color__background-footer;
+  color: $color__font-footer;
+  padding: 1rem;
+  &__titre,
+  &__presentation,
+  &__author {
+    text-align: center;
+  }
+}

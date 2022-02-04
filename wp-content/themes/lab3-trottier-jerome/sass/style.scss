@@ -1,0 +1,19 @@
+/**
+Theme Name: Lab3 Trottier Jerome
+*/
+
+//Variables
+@import "variables/colors";
+@import "variables/typo";
+
+//Elements
+@import "elements/links";
+
+//Initialisation
+@import "init/normalize";
+@import "init/box-sizing";
+
+//Components
+@import "components/components";
+//Layout
+@import "layout/layout";
