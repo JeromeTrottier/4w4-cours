@@ -1,9 +1,7 @@
-/** 
-theme name: Lab3 Trottier Jerome
-*/
-body {
+.site {
   background-color: $color__background-body;
   font-family: $font__main;
+  padding: 10px;
 }
 .principal {
   margin: 20px;
@@ -14,6 +12,7 @@ body {
 }
 .formation__titre {
   font-size: 2rem;
+  text-align: center;
 }
 .formation__liste {
   display: flex;

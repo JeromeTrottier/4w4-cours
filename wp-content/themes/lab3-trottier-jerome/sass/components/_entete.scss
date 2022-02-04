@@ -1,12 +1,12 @@
-.entete {
-  background-color: $color__background-entete;
+.site__header {
+  background-color: $color__background-header;
   text-align: center;
-  &__titre {
+  .header__titre {
     font-size: 3em;
-    font-family: $font__entete;
+    font-family: $font__header;
   }
 
-  &__desc {
+  .header__desc {
     font-size: 1.5rem;
   }
 }

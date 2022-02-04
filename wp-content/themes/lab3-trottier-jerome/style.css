@@ -342,12 +342,10 @@ html {
   box-sizing: border-box;
 }
 
-/** 
-theme name: Lab3 Trottier Jerome
-*/
-body {
+.site {
   background-color: #7fffd9;
   font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
 }
 
 .principal {
@@ -361,6 +359,7 @@ body {
 
 .formation__titre {
   font-size: 2rem;
+  text-align: center;
 }
 
 .formation__liste {
@@ -407,17 +406,17 @@ body {
   text-justify: inter-word;
 }
 
-.entete {
+.site__header {
   background-color: #ff99aa;
   text-align: center;
 }
 
-.entete__titre {
+.site__header .header__titre {
   font-size: 3em;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
-.entete__desc {
+.site__header .header__desc {
   font-size: 1.5rem;
 }
 
@@ -432,9 +431,30 @@ body {
   text-align: center;
 }
 
-body.home {
+.site {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: auto 20%;
+  grid-template-areas: "header header" "main sidebar" "footer footer";
+}
+
+.site .site__header {
+  grid-area: header;
+  background-color: #ff99aa;
+}
+
+.site .site__barre {
+  grid-area: sidebar;
   background-color: #7fffd9;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 10px;
+}
+
+.site .site__main {
+  grid-area: main;
+  background-color: #7fffd9;
+}
+
+.site .site__footer {
+  grid-area: footer;
+  background-color: grey;
 }
 /*# sourceMappingURL=style.css.map */
