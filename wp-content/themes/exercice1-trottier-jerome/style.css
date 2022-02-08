@@ -1,5 +1,5 @@
 /**
-Theme Name: Lab4 Trottier Jerome
+Theme Name: Exercice 1 Trottier Jerome
 */
 a {
   color: #0004ff;
@@ -357,18 +357,18 @@ html {
   flex-direction: column;
 }
 
-.formation .formation__titre {
+.formation__titre {
   font-size: 2rem;
   text-align: center;
 }
 
-.formation .formation__liste {
+.formation__liste {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.formation .formation__cours {
+.formation__cours {
   margin: 20px;
   background-color: white;
   border: 0px solid transparent;
@@ -381,7 +381,7 @@ html {
   transition: box-shadow 0.5s, border 0.5s;
 }
 
-.formation .formation__cours:hover {
+.formation__cours:hover {
   box-shadow: 0px 0px 0px grey;
   border: 2px black solid;
 }

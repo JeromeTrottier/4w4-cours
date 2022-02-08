@@ -15,20 +15,10 @@
             <?php blogInfo('name') ?>
         </h1>
         <h2 class="header__desc">
-            <?php blogInfo('description') ?>
+            <!-- <?php blogInfo('description') ?> -->
+            Conception d'interface Web
         </h2>
     </header>
     <section class="site__barre">
-        <nav class="navigation">
-            <a href="#" class="navigation__lien">mon lien 001</a>
-            <a href="#" class="navigation__lien">mon lien 002</a>
-            <a href="#" class="navigation__lien">mon lien 003</a>
-            <a href="#" class="navigation__lien">mon lien 004</a>
-            <a href="#" class="navigation__lien">mon lien 005</a>
-            <a href="#" class="navigation__lien">mon lien 006</a>
-            <a href="#" class="navigation__lien">mon lien 007</a>
-            <a href="#" class="navigation__lien">mon lien 008</a>
-            <a href="#" class="navigation__lien">mon lien 009</a>
-            <a href="#" class="navigation__lien">mon lien 010</a>
-        </nav>
+        <?php wp_nav_menu(array("menu" => "principal", 'container' => "nav")); ?>
     </section>
