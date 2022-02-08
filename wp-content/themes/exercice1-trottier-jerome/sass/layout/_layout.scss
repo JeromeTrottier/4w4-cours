@@ -1,26 +1,37 @@
 .site {
   display: grid;
   gap: 20px;
-  grid-template-columns: ($size__site-sidebar) auto;
+  grid-template-columns: 1fr;
   grid-template-areas:
-    "header header"
-    "sidebar main"
-    "footer footer";
+    "sidebar"
+    "header"
+    "main"
+    "footer";
 
-  .site__header {
+  &__header {
     grid-area: header;
     background-color: $color__background-header;
   }
-  .site__barre {
+  &__barre {
     grid-area: sidebar;
     background-color: $color__background-barre;
   }
-  .site__main {
+  &__main {
     grid-area: main;
     background-color: $color__background-main;
   }
-  .site__footer {
+  &__footer {
     grid-area: footer;
     background-color: $color__background-footer;
+  }
+}
+
+@media screen and (min-width: $largeur__media--tablette) {
+  .site {
+    grid-template-columns: ($size__site-sidebar) auto;
+    grid-template-areas:
+      "header header"
+      "sidebar main"
+      "footer footer";
   }
 }

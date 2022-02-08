@@ -376,9 +376,21 @@ html {
   box-shadow: 5px 5px 0px 0px black;
   display: flex;
   flex-direction: column;
-  flex: 1 0 40%;
+  width: 100%;
   padding: 10px;
   transition: box-shadow 0.5s, border 0.5s;
+}
+
+@media screen and (min-width: 768px) {
+  .formation__cours {
+    width: 42%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .formation__cours {
+    width: 28.5%;
+  }
 }
 
 .formation__cours:hover {
@@ -436,27 +448,34 @@ html {
 .site {
   display: grid;
   gap: 20px;
-  grid-template-columns: 20% auto;
-  grid-template-areas: "header header" "sidebar main" "footer footer";
+  grid-template-columns: 1fr;
+  grid-template-areas: "sidebar" "header" "main" "footer";
 }
 
-.site .site__header {
+.site__header {
   grid-area: header;
   background-color: #ff99aa;
 }
 
-.site .site__barre {
+.site__barre {
   grid-area: sidebar;
   background-color: #ecff7f;
 }
 
-.site .site__main {
+.site__main {
   grid-area: main;
   background-color: #aeff7f;
 }
 
-.site .site__footer {
+.site__footer {
   grid-area: footer;
   background-color: grey;
+}
+
+@media screen and (min-width: 768px) {
+  .site {
+    grid-template-columns: 20% auto;
+    grid-template-areas: "header header" "sidebar main" "footer footer";
+  }
 }
 /*# sourceMappingURL=style.css.map */

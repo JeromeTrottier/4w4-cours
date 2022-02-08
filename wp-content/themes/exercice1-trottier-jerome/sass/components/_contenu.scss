@@ -26,7 +26,13 @@
     box-shadow: 5px 5px 0px 0px black;
     display: flex;
     flex-direction: column;
-    flex: 1 0 40%;
+    width: 100%;
+    @media screen and (min-width: $largeur__media--tablette) {
+      width: 42%;
+    }
+    @media screen and (min-width: $largeur__media--desktop) {
+      width: 28.5%;
+    }
     padding: 10px;
     transition: box-shadow 0.5s, border 0.5s;
   }
