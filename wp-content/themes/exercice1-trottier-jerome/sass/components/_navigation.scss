@@ -3,6 +3,7 @@
 }
 #burger {
   position: fixed;
+  z-index: 2;
   transition: transform 0.2s;
   transform: rotate(0);
 }
@@ -15,13 +16,18 @@
 }
 #chk-burger:checked ~ .menu-principal-container {
   display: block;
+  transform: scale(1, 0);
+  animation: animationOverlay 0.5s forwards;
 }
-
+.site__barre {
+  background-color: transparent;
+}
 .menu {
   list-style-type: none;
+  padding: 0;
   &-item {
     margin: 0;
-    padding: 0;
+    padding: 0px;
     a {
       display: block;
       text-decoration: none;
@@ -35,10 +41,18 @@
 }
 @media screen and (min-width: $largeur__media--tablette) {
   .menu-principal-container {
-    position: fixed;
     display: block;
   }
   #burger {
     display: none;
+  }
+}
+@keyframes animationOverlay {
+  from {
+    transform: scale(1, 0);
+  }
+
+  to {
+    transform: scale(1, 1);
   }
 }
