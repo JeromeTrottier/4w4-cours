@@ -1,7 +1,7 @@
 .site {
   background-color: $color__background-body;
   font-family: $font__main;
-  padding: 10px;
+  padding: 0px;
 }
 .principal {
   margin: 20px;
@@ -23,7 +23,7 @@
     background-color: white;
     border: 0px solid transparent;
     border-radius: 20px;
-    box-shadow: 5px 5px 0px 0px black;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.281);
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -37,8 +37,8 @@
     transition: box-shadow 0.5s, border 0.5s;
   }
   &__cours:hover {
-    box-shadow: 0px 0px 0px grey;
-    border: 2px black solid;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.281);
+    border: 2px grey solid;
   }
 }
 .cours__titre {
@@ -50,7 +50,7 @@
 
 .cours__sigle {
   font-size: 1.5rem;
-  color: rgb(101, 209, 173);
+  color: $color__background-header;
   text-shadow: 1px 1px 0px black;
 }
 .cours__desc {

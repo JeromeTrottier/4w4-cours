@@ -1,5 +1,13 @@
+@charset "UTF-8";
 /**
 Theme Name: Exercice 1 Trottier Jerome
+Author : Jerome trottier
+Autor URI : githublink
+Description : Ce thème servira de base de développement pour l'
+Version : 1.0.0
+Liscense : GNU General Public License v2 or later
+License URI : LICENSE
+Text Domain : cidw-4w4
 */
 a {
   color: #0004ff;
@@ -343,9 +351,9 @@ html {
 }
 
 .site {
-  background-color: #7fffd9;
+  background-color: white;
   font-family: Arial, Helvetica, sans-serif;
-  padding: 10px;
+  padding: 0px;
 }
 
 .principal {
@@ -373,7 +381,7 @@ html {
   background-color: white;
   border: 0px solid transparent;
   border-radius: 20px;
-  box-shadow: 5px 5px 0px 0px black;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.281);
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -394,8 +402,8 @@ html {
 }
 
 .formation__cours:hover {
-  box-shadow: 0px 0px 0px grey;
-  border: 2px black solid;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.281);
+  border: 2px grey solid;
 }
 
 .cours__titre {
@@ -408,7 +416,7 @@ html {
 
 .cours__sigle {
   font-size: 1.5rem;
-  color: #65d1ad;
+  color: #16b330;
   text-shadow: 1px 1px 0px black;
 }
 
@@ -419,7 +427,7 @@ html {
 }
 
 .site__header {
-  background-color: #ff99aa;
+  background-color: #16b330;
   text-align: center;
   padding-left: 19px;
   display: flex;
@@ -467,27 +475,35 @@ html {
   position: relative;
 }
 
+.recherche ::placeholder {
+  color: black;
+}
+
 .recherche__input {
   background-color: rgba(0, 0, 0, 0.1);
   margin: 0;
   outline: 0;
   width: 100%;
+  padding: 0.5rem;
+  border: 1px solid black;
+  border-radius: 3px;
 }
 
 .recherche__bouton {
+  background-color: transparent;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 0.35rem;
+  right: 2px;
   width: 24px;
   height: 24px;
   border: none;
   outline: none;
-  padding: 0;
+  padding: 0rem;
 }
 
 .site__footer {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  background-color: grey;
+  background-color: #16b330;
   color: white;
   padding: 1rem;
 }
@@ -575,7 +591,7 @@ html {
 
 .site__header {
   grid-area: header;
-  background-color: #ff99aa;
+  background-color: #16b330;
 }
 
 .site__barre {
@@ -590,7 +606,7 @@ html {
 
 .site__footer {
   grid-area: footer;
-  background-color: grey;
+  background-color: #16b330;
 }
 
 @media screen and (min-width: 768px) {

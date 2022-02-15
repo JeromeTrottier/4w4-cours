@@ -42,20 +42,27 @@
 .recherche {
   width: 100%;
   position: relative;
+  ::placeholder {
+    color: black;
+  }
   &__input {
     background-color: rgba(0, 0, 0, 0.1);
     margin: 0;
     outline: 0;
     width: 100%;
+    padding: 0.5rem;
+    border: 1px solid black;
+    border-radius: 3px;
   }
   &__bouton {
+    background-color: transparent;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 0.35rem;
+    right: 2px;
     width: 24px;
     height: 24px;
     border: none;
     outline: none;
-    padding: 0;
+    padding: 0rem;
   }
 }
