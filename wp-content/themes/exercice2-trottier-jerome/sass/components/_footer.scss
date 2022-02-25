@@ -1,4 +1,11 @@
 .site__footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-family: $font__header;
+  background-color: $color__background-footer;
+  color: $color__font-footer;
+  padding: 1rem;
   & > section {
     text-align: center;
   }
@@ -13,12 +20,6 @@
   & > section:nth-child(2) {
     flex: 4;
   }
-  display: flex;
-  justify-content: space-between;
-  font-family: $font__header;
-  background-color: $color__background-footer;
-  color: $color__font-footer;
-  padding: 1rem;
   &__menu {
     // .site__menu__footer
     &__ul {
