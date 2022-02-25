@@ -70,7 +70,7 @@
       transform: translateX(210%);
     }
     .formation__cours {
-      box-shadow: 5px 5px $color__background-main;
+      box-shadow: 5px 5px $color__background-ombre;
     }
   }
 }
@@ -88,9 +88,4 @@
 }
 .cours__desc {
   font-size: 1rem;
-}
-
-.main__frontpage {
-  margin: 1rem;
-  border: 4px dotted black;
 }

@@ -504,11 +504,6 @@ html {
   font-size: 1rem;
 }
 
-.main__frontpage {
-  margin: 1rem;
-  border: 4px dotted black;
-}
-
 .site__header {
   background-color: #04d9d9;
   text-align: center;
@@ -723,6 +718,29 @@ html {
   }
 }
 
+.site__main {
+  z-index: -2;
+  margin: 1rem 1rem 2rem 1rem;
+}
+
+.site__main .cours {
+  box-shadow: 5px 5px #104567;
+  background: linear-gradient(45deg, #04d9d9 5%, #104567 5%, #104567 6%, #e8dbd2 6%, #e8dbd2 94%, #104567 94%, #104567 95%, #f27405 95%);
+  height: 100%;
+}
+
+.site__main .cours__titre {
+  padding: 2rem;
+}
+
+.site__main .cours img {
+  margin: 0rem 0rem 0rem 2rem;
+}
+
+.site__main .cours__contenu {
+  padding: 0rem 2rem 3rem 2rem;
+}
+
 .animation {
   display: flex;
   justify-content: space-around;
@@ -764,12 +782,12 @@ html {
 .site__barre {
   grid-area: sidebar;
   background-color: #e8dbd2;
-  box-shadow: -5px 0px #104567;
+  box-shadow: 5px 0px #104567;
 }
 
 .site__main {
   grid-area: main;
-  background-color: #104567;
+  background-color: white;
 }
 
 .site__footer {
@@ -779,8 +797,8 @@ html {
 
 @media screen and (min-width: 768px) {
   .site {
-    grid-template-columns: auto 20%;
-    grid-template-areas: "header header" "main sidebar" "footer footer";
+    grid-template-columns: 20% auto;
+    grid-template-areas: "header header" "sidebar main" "footer footer";
   }
 }
 /*# sourceMappingURL=style.css.map */
