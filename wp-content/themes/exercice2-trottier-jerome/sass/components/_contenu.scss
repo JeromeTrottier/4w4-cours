@@ -29,12 +29,12 @@
       position: absolute;
     }
     .bloc__bleu {
-      background-color: $color__background-barre;
+      background-color: $color__background-bloc-bleu;
       right: -20px;
       top: -40px;
     }
     .bloc__orange {
-      background-color: $color__background-footer;
+      background-color: $color__background-bloc-orange;
       bottom: -40px;
       left: -20px;
     }
@@ -47,14 +47,18 @@
     }
   }
   &__cours {
-    background-color: white;
+    background-color: $color__background-barre;
     border: 0px solid transparent;
     display: flex;
     flex-direction: column;
     transition: 0.2s;
-    height: 400px;
+    height: 100%;
     > * {
       margin: 1rem;
+    }
+    img {
+      width: calc(100% - 2rem);
+      height: auto;
     }
   }
 

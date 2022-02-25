@@ -21,7 +21,7 @@
   }
 }
 a {
-  @include links($color__link, $color__link-visited, $color__link-hover);
+  @include links($color__link, $color__link-visited, $color__link);
 }
 
 .site__footer a {
@@ -32,6 +32,7 @@ a {
   );
 }
 .site__header__titre a {
+  text-decoration: none;
   @include links(
     $color__link__header,
     $color__link__header-visited,

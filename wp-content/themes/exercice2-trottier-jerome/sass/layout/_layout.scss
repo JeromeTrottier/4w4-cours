@@ -1,6 +1,5 @@
 .site {
   display: grid;
-  gap: 20px;
   grid-template-columns: 1fr;
   grid-template-areas:
     "sidebar"
@@ -15,6 +14,7 @@
   &__barre {
     grid-area: sidebar;
     background-color: $color__background-barre;
+    box-shadow: -5px 0px $color__background-main;
   }
   &__main {
     grid-area: main;
@@ -28,10 +28,10 @@
 
 @media screen and (min-width: $largeur__media--tablette) {
   .site {
-    grid-template-columns: ($size__site-sidebar) auto;
+    grid-template-columns: auto ($size__site-sidebar);
     grid-template-areas:
       "header header"
-      "sidebar main"
+      "main sidebar"
       "footer footer";
   }
 }
