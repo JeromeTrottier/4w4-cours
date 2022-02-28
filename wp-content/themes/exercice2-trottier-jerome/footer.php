@@ -18,7 +18,8 @@
             //"after" => "@", // Met a l'exterieur de a
             "link_before" => $icone, // Met a l'interieur de a
             // "link_after" => "±" // Met a l'interieur de a
-        )) ?>
+        ));
+        get_search_form(); ?>
     </section>
     <section class="site__footer__reseaux-sociaux">
         <h2>Nous rejoindre</h2>
@@ -38,5 +39,6 @@
 
 </footer>
 </body>
+<?php wp_footer() ?>
 
 </html>
