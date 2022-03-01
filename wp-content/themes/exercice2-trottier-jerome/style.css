@@ -70,6 +70,14 @@ a:hover, a:active {
   outline: 0;
 }
 
+.site__header__util .icone a svg {
+  color: white;
+}
+
+.site__header__util .icone a svg:hover, .site__header__util .icone a svg:focus, .site__header__util .icone a svg:active {
+  color: #3f3f3f;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
 	 ========================================================================== */
@@ -589,11 +597,18 @@ html {
 .site__footer {
   width: 100%;
   display: flex;
+  flex-flow: column;
   justify-content: space-between;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   background-color: #f27405;
   color: white;
   padding: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .site__footer {
+    flex-flow: row;
+  }
 }
 
 .site__footer > section {
@@ -757,22 +772,13 @@ html {
   border-radius: 20px 0px 20px 0px;
 }
 
-.main__frontpage .bloc-bleu-frontpage {
-  background-color: #04d9d9;
-  left: 0;
+.site__barre {
+  box-shadow: 5px 0px #104567;
 }
 
-.main__frontpage .bloc-orange-frontpage {
-  background-color: #f27405;
-  right: 0;
-}
-
-.main__frontpage .bloc-bleu-frontpage,
-.main__frontpage .bloc-orange-frontpage {
-  position: absolute;
-  top: 0;
-  width: 50px;
-  height: 100px;
+.site__barre .menu-item a {
+  display: flex;
+  align-items: center;
 }
 
 .animation {
@@ -805,26 +811,6 @@ html {
 .bloc-bleu-frontpage,
 .bloc-orange-frontpage {
   animation: animBlocsFrontpage 5s infinite linear;
-}
-
-@keyframes animBlocsFrontpage {
-  0%,
-  100% {
-    transform: translateY(unset);
-    width: 50px;
-  }
-  25% {
-    transform: translateY(250%);
-    width: 25px;
-  }
-  50% {
-    transform: translateY(500%);
-    width: 50px;
-  }
-  75% {
-    transform: translateY(250%);
-    width: 25px;
-  }
 }
 
 .site {

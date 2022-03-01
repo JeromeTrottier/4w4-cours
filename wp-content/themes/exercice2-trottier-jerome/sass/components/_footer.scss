@@ -1,6 +1,10 @@
 .site__footer {
   width: 100%;
   display: flex;
+  flex-flow: column;
+  @media screen and (min-width: $largeur__media--tablette) {
+    flex-flow: row;
+  }
   justify-content: space-between;
   font-family: $font__header;
   background-color: $color__background-footer;
