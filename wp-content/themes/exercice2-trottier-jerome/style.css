@@ -78,6 +78,30 @@ a:hover, a:active {
   color: #3f3f3f;
 }
 
+.site__footer__reseaux-sociaux div:first-of-type a svg {
+  color: #104567;
+}
+
+.site__footer__reseaux-sociaux div:first-of-type a svg:hover, .site__footer__reseaux-sociaux div:first-of-type a svg:focus, .site__footer__reseaux-sociaux div:first-of-type a svg:active {
+  color: red;
+}
+
+.site__footer__reseaux-sociaux div:nth-of-type(2) a svg {
+  color: #104567;
+}
+
+.site__footer__reseaux-sociaux div:nth-of-type(2) a svg:hover, .site__footer__reseaux-sociaux div:nth-of-type(2) a svg:focus, .site__footer__reseaux-sociaux div:nth-of-type(2) a svg:active {
+  color: blue;
+}
+
+.site__footer__reseaux-sociaux div:last-of-type a svg {
+  color: #104567;
+}
+
+.site__footer__reseaux-sociaux div:last-of-type a svg:hover, .site__footer__reseaux-sociaux div:last-of-type a svg:focus, .site__footer__reseaux-sociaux div:last-of-type a svg:active {
+  color: #0099ff;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
 	 ========================================================================== */

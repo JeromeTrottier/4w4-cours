@@ -55,3 +55,21 @@ a {
 .site__header__util .icone a {
   @include svgLinks($color__link__header, $color__link__header-hover);
 }
+
+.site__footer__reseaux-sociaux {
+  div:first-of-type {
+    a {
+      @include svgLinks($color__background-ombre, red);
+    }
+  }
+  div:nth-of-type(2) {
+    a {
+      @include svgLinks($color__background-ombre, blue);
+    }
+  }
+  div:last-of-type {
+    a {
+      @include svgLinks($color__background-ombre, rgb(0, 153, 255));
+    }
+  }
+}
