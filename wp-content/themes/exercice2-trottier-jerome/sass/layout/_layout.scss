@@ -1,6 +1,5 @@
 .site {
   display: grid;
-  gap: 20px;
   grid-template-columns: 1fr;
   grid-template-areas:
     "sidebar"
@@ -15,6 +14,7 @@
   &__barre {
     grid-area: sidebar;
     background-color: $color__background-barre;
+    box-shadow: 5px 0px $color__background-ombre;
   }
   &__main {
     grid-area: main;

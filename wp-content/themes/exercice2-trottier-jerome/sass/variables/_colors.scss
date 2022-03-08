@@ -1,8 +1,11 @@
-$color__background-body: #e8dbd2;
-$color__background-header: #d9aa8f;
-$color__background-barre: #04d9d9;
-$color__background-main: #104567;
-$color__background-footer: #d9aa8f;
+$color__background-body: #ffffff;
+$color__background-header: #04d9d9;
+$color__background-barre: #e8dbd2;
+$color__background-bloc-bleu: #04d9d9;
+$color__background-bloc-orange: #f27405;
+$color__background-ombre: #104567;
+$color__background-main: white;
+$color__background-footer: #f27405;
 $color__background-link: rgb(63, 63, 63);
 $color__background-link-hover: rgb(41, 41, 41);
 
@@ -12,14 +15,14 @@ $color__link-hover: #04d9d9;
 $color__link-visited: #f27405;
 
 //liens footer
-$color__link__footer: #f27405;
-$color__link__footer-hover: #04d9d9;
-$color__link__footer-visited: #f27405;
+$color__link__footer: rgb(63, 63, 63);
+$color__link__footer-hover: white;
+$color__link__footer-visited: rgb(63, 63, 63);
 
 //liens header
-$color__link__header: #f27405;
-$color__link__header-hover: #04d9d9;
-$color__link__header-visited: #f27405;
+$color__link__header: white;
+$color__link__header-hover: rgb(63, 63, 63);
+$color__link__header-visited: white;
 
 // Fonts
 $color__font-footer: white;

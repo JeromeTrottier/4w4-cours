@@ -18,7 +18,7 @@ a:visited {
 }
 
 a:hover, a:focus, a:active {
-  color: #04d9d9;
+  color: #f27405;
 }
 
 a:focus {
@@ -30,15 +30,15 @@ a:hover, a:active {
 }
 
 .site__footer a {
-  color: #f27405;
+  color: #3f3f3f;
 }
 
 .site__footer a:visited {
-  color: #f27405;
+  color: #3f3f3f;
 }
 
 .site__footer a:hover, .site__footer a:focus, .site__footer a:active {
-  color: #04d9d9;
+  color: white;
 }
 
 .site__footer a:focus {
@@ -50,15 +50,16 @@ a:hover, a:active {
 }
 
 .site__header__titre a {
-  color: #f27405;
+  text-decoration: none;
+  color: white;
 }
 
 .site__header__titre a:visited {
-  color: #f27405;
+  color: white;
 }
 
 .site__header__titre a:hover, .site__header__titre a:focus, .site__header__titre a:active {
-  color: #04d9d9;
+  color: #3f3f3f;
 }
 
 .site__header__titre a:focus {
@@ -67,6 +68,38 @@ a:hover, a:active {
 
 .site__header__titre a:hover, .site__header__titre a:active {
   outline: 0;
+}
+
+.site__header__util .icone a svg {
+  color: white;
+}
+
+.site__header__util .icone a svg:hover, .site__header__util .icone a svg:focus, .site__header__util .icone a svg:active {
+  color: #3f3f3f;
+}
+
+.site__footer__reseaux-sociaux div:first-of-type a svg {
+  color: #104567;
+}
+
+.site__footer__reseaux-sociaux div:first-of-type a svg:hover, .site__footer__reseaux-sociaux div:first-of-type a svg:focus, .site__footer__reseaux-sociaux div:first-of-type a svg:active {
+  color: red;
+}
+
+.site__footer__reseaux-sociaux div:nth-of-type(2) a svg {
+  color: #104567;
+}
+
+.site__footer__reseaux-sociaux div:nth-of-type(2) a svg:hover, .site__footer__reseaux-sociaux div:nth-of-type(2) a svg:focus, .site__footer__reseaux-sociaux div:nth-of-type(2) a svg:active {
+  color: blue;
+}
+
+.site__footer__reseaux-sociaux div:last-of-type a svg {
+  color: #104567;
+}
+
+.site__footer__reseaux-sociaux div:last-of-type a svg:hover, .site__footer__reseaux-sociaux div:last-of-type a svg:focus, .site__footer__reseaux-sociaux div:last-of-type a svg:active {
+  color: #0099ff;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -392,7 +425,7 @@ html {
 }
 
 .site {
-  background-color: #e8dbd2;
+  background-color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
   padding: 0px;
 }
@@ -438,7 +471,7 @@ html {
 }
 
 .formation__container .bloc__orange {
-  background-color: #d9aa8f;
+  background-color: #f27405;
   bottom: -40px;
   left: -20px;
 }
@@ -456,16 +489,21 @@ html {
 }
 
 .formation__cours {
-  background-color: white;
+  background-color: #e8dbd2;
   border: 0px solid transparent;
   display: flex;
   flex-direction: column;
   transition: 0.2s;
-  height: 400px;
+  height: 100%;
 }
 
 .formation__cours > * {
   margin: 1rem;
+}
+
+.formation__cours img {
+  width: calc(100% - 2rem);
+  height: auto;
 }
 
 .formation__container:hover .bloc__bleu {
@@ -490,7 +528,7 @@ html {
 
 .cours__sigle {
   font-size: 1.5rem;
-  color: #d9aa8f;
+  color: #04d9d9;
   text-shadow: 1px 1px 0px black;
 }
 
@@ -498,13 +536,8 @@ html {
   font-size: 1rem;
 }
 
-.main__frontpage {
-  margin: 1rem;
-  border: 4px dotted black;
-}
-
 .site__header {
-  background-color: #d9aa8f;
+  background-color: #04d9d9;
   text-align: center;
   padding-left: 19px;
   display: flex;
@@ -536,6 +569,7 @@ html {
 
 .site__header__util {
   display: flex;
+  gap: 1rem;
   flex-direction: row;
   align-items: center;
   width: 100%;
@@ -585,26 +619,53 @@ html {
 }
 
 .site__footer {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  background-color: #d9aa8f;
+  background-color: #f27405;
   color: white;
   padding: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .site__footer {
+    flex-flow: row;
+  }
+}
+
+.site__footer > section {
+  text-align: center;
+}
+
+.site__footer > section:nth-child(1),
+.site__footer > section:nth-child(3) {
+  flex: 1;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site__footer > section:nth-child(2) {
+  flex: 4;
 }
 
 .site__footer__menu__ul {
   padding: 0;
   display: flex;
   list-style-type: none;
-  justify-content: center;
 }
 
 .site__footer__menu__ul .menu-item {
+  flex: 1;
   width: 20%;
-  margin: 10px 5px;
-  border-radius: 3px;
+  margin: 2rem;
 }
 
 .site__footer__menu__ul .menu-item a {
+  border: 1px solid black;
   text-align: center;
   display: flex;
   align-items: center;
@@ -616,7 +677,7 @@ html {
 }
 
 .site__footer__menu__ul .menu-item:hover svg {
-  color: #04d9d9;
+  color: #e8dbd2;
 }
 
 .site__footer .footer__titre,
@@ -668,11 +729,15 @@ html {
   display: block;
   text-decoration: none;
   padding: 0.5rem;
-  background-color: #3f3f3f;
+  transition: 0.3s;
+  background: linear-gradient(to left, #04d9d9 50%, transparent 50%);
+  background-size: 200% 200%;
+  background-position: 0% 0%;
 }
 
 .menu-item a:hover {
-  background-color: #292929;
+  box-shadow: 0px 1px 0px 5px #104567;
+  background-position: 20% 0%;
 }
 
 @media screen and (min-width: 768px) {
@@ -693,6 +758,53 @@ html {
   }
 }
 
+.site__main {
+  z-index: -2;
+  margin: 1rem 1rem 2rem 1rem;
+}
+
+.site__main .cours {
+  box-shadow: 5px 5px #104567;
+  background: linear-gradient(45deg, #04d9d9 5%, #104567 5%, #104567 6%, #e8dbd2 6%, #e8dbd2 94%, #104567 94%, #104567 95%, #f27405 95%);
+  height: 100%;
+}
+
+.site__main .cours__titre {
+  padding: 2rem;
+}
+
+.site__main .cours img {
+  margin: 0rem 0rem 0rem 2rem;
+}
+
+.site__main .cours__contenu {
+  padding: 0rem 2rem 3rem 2rem;
+}
+
+.main__frontpage {
+  position: relative;
+}
+
+.main__frontpage h1 {
+  margin: none;
+  background-color: #e8dbd2;
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  border-radius: 20px 0px 20px 0px;
+}
+
+.site__barre {
+  box-shadow: 5px 0px #104567;
+}
+
+.site__barre .menu-item a {
+  display: flex;
+  align-items: center;
+}
+
 .animation {
   display: flex;
   justify-content: space-around;
@@ -706,10 +818,8 @@ html {
   width: 100px;
   height: 100px;
   margin: 1rem;
-  border: 2px solid blue;
   border-radius: 50%;
-  background-color: #04d9d9;
-  color: white;
+  background-color: #e8dbd2;
   font-size: 2rem;
 }
 
@@ -722,31 +832,36 @@ html {
   }
 }
 
+.bloc-bleu-frontpage,
+.bloc-orange-frontpage {
+  animation: animBlocsFrontpage 5s infinite linear;
+}
+
 .site {
   display: grid;
-  gap: 20px;
   grid-template-columns: 1fr;
   grid-template-areas: "sidebar" "header" "main" "footer";
 }
 
 .site__header {
   grid-area: header;
-  background-color: #d9aa8f;
+  background-color: #04d9d9;
 }
 
 .site__barre {
   grid-area: sidebar;
-  background-color: #04d9d9;
+  background-color: #e8dbd2;
+  box-shadow: 5px 0px #104567;
 }
 
 .site__main {
   grid-area: main;
-  background-color: #104567;
+  background-color: white;
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: #d9aa8f;
+  background-color: #f27405;
 }
 
 @media screen and (min-width: 768px) {
