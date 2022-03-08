@@ -1,6 +1,5 @@
 <?php get_header() ?>
 <main class="principal">
-    <h1>category-cours.php</h1>
     <section class="formation">
         <h2 class="formation__titre">Liste des cours du programme TIM</h2>
         <div class="formation__liste">
@@ -23,6 +22,7 @@
                             <a href="<?php the_permalink() ?>">
                                 <h3 class="cours__titre"> <?= $titreFiltreCours; ?></h3>
                             </a>
+                            <?php echo the_post_thumbnail() ?>
                             <div class="cours__nbre-heure"><?= $nbHeures; ?></div>
                             <p class="cours__sigle"><?= $sigleCours; ?> </p>
                             <p class="cours__desc"> <?= $descCours; ?></p>
