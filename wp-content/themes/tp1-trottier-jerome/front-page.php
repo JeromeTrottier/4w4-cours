@@ -9,11 +9,12 @@
         <div class="animation__bloc">5</div>
     </section>
     <h1 class="site__main__titre">Parcours d'un Timien</h1>
-    <?php if (have_posts()) : the_post(); ?>
-        <?php the_title() ?>
-        <?php the_content() ?>
+    <div class="site__main__contenu-fake-bordure">
+        <?php if (have_posts()) : the_post(); ?>
+            <?php the_title() ?>
+            <?php the_content() ?>
 
-    <?php endif ?>
-
+        <?php endif ?>
+    </div>
 </main>
 <?php get_footer() ?>

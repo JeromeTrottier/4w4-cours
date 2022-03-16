@@ -463,11 +463,41 @@ a:hover, a:active {
 COMPOSANTES
 --------------------------------------------------------- */
 .site__main {
-  height: 80vh;
+  min-height: 80vh;
   padding: 10px 15px;
   background-color: transparent;
   border-radius: 5px;
   box-shadow: #39443e 1px -1px 10px;
+}
+
+.site__main__contenu-fake-bordure {
+  border: 2px solid black;
+  animation: shadow-spin 2s infinite linear;
+}
+
+.site__main__contenu-fake-bordure p {
+  color: white;
+  background-color: #042a45;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+@keyframes shadow-spin {
+  0% {
+    box-shadow: 5px 5px white;
+  }
+  25% {
+    box-shadow: 5px -5px white;
+  }
+  50% {
+    box-shadow: -5px -5px white;
+  }
+  75% {
+    box-shadow: -5px 5px white;
+  }
+  100% {
+    box-shadow: 5px 5px white;
+  }
 }
 
 .site__main__titre {
@@ -693,7 +723,14 @@ COMPOSANTES
 
 .site__footer__colonne {
   display: flex;
+  flex-flow: column;
   justify-content: space-between;
+}
+
+@media screen and (min-width: 800px) {
+  .site__footer__colonne {
+    flex-flow: row;
+  }
 }
 
 .site__footer__colonne section {
@@ -776,11 +813,14 @@ ANIMATION
 --------------------------------------------------------- */
 .animation {
   display: flex;
-  justify-content: space-between;
-  z-index: 2;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 0px 4rem;
 }
 
 .animation__bloc {
+  position: relative;
+  z-index: -1;
   display: flex;
   justify-content: center;
   align-items: center;

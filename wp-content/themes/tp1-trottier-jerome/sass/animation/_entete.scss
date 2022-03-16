@@ -1,8 +1,11 @@
 .animation {
   display: flex;
-  justify-content: space-between;
-  z-index: 2;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 0px 4rem;
   &__bloc {
+    position: relative;
+    z-index: -1;
     display: flex;
     justify-content: center;
     align-items: center;
