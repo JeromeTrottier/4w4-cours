@@ -1,4 +1,12 @@
 #burger {
+  cursor: pointer;
+  svg {
+    background-color: $color__background-burger;
+    border-radius: 50%;
+  }
+  svg:hover {
+    background-color: $color__background-burger-hover;
+  }
   z-index: 4;
   position: absolute;
   transition: transform 0.3s;
@@ -20,9 +28,14 @@
 #chk-burger:checked ~ .menu-principal-container {
   transform: translate(0%);
 }
-
 .menu-principal-container {
+  background-color: $color__background-nav;
+}
+.home .menu-principal-container {
   padding: 30px 0 0 0;
+}
+.site .menu-principal-container {
+  padding: unset;
 }
 .menu {
   list-style-type: none;
@@ -53,6 +66,7 @@
   }
   .home .menu-principal-container {
     display: block;
+    padding: 30px 0 0 0;
     position: absolute;
     transform: translate(-100%);
     transition: 0.5s;
