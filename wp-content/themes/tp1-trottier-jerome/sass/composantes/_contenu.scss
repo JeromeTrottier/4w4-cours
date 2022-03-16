@@ -4,6 +4,10 @@
   background-color: $color__background-main;
   border-radius: 5px;
   box-shadow: rgb(57, 68, 62) 1px -1px 10px;
+
+  &__titre {
+    font-size: 5rem;
+  }
 }
 
 .formation {

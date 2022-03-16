@@ -24,9 +24,11 @@
   position: absolute;
   transform: translate(-100%);
   transition: 0.5s;
+  box-shadow: unset;
 }
 #chk-burger:checked ~ .menu-principal-container {
   transform: translate(0%);
+  box-shadow: 5px 5px white;
 }
 .menu-principal-container {
   background-color: $color__background-nav;
