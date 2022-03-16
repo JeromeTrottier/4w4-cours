@@ -1,26 +1,46 @@
-/**
-Theme Name: Exercice 2 Trottier Jerome
-Author : Jerome Trottier
-Author URI : https://github.com/JeromeTrottier/
-Description : Ce thème servira de base de développement pour l'ensemble
-Version : 1.0.0
-Liscense : GNU General Public License v2 or later
-License URI : LICENSE
-Text Domain : cidw-4w4
+/*
+theme name: TP1-Jérôme-Trottier
+Author: Jérôme Trottier
+Author URI: https://github.com/JeromeTrottier
+Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: cidw-4w4
+
 */
+/* ---------------------------------------------------------
+VARIABLES
+--------------------------------------------------------- */
+@import "variables/couleurs";
+@import "variables/typo";
+@import "variables/structure";
 
-//Variables
-@import "variables/variables";
+/* ---------------------------------------------------------
+INITIALISATION
+--------------------------------------------------------- */
+@import "initialisation/normalize";
+@import "initialisation/box-sizing";
 
-//Elements
+/* ---------------------------------------------------------
+ÉLÉMENTS
+--------------------------------------------------------- */
 @import "elements/links";
 
-//Initialisation
-@import "init/normalize";
-@import "init/box-sizing";
-
-//Components
-@import "components/components";
-@import "animations/animations";
-//Layout
+/* ---------------------------------------------------------
+COMPOSANTES
+--------------------------------------------------------- */
+@import "composantes/contenu";
+@import "composantes/header";
+@import "composantes/navigation";
+@import "composantes/footer";
+@import "composantes/single_cours";
+@import "composantes/recherche";
+/* ---------------------------------------------------------
+ANIMATION
+--------------------------------------------------------- */
+@import "animation/entete";
+/* ---------------------------------------------------------
+LAYOUT
+--------------------------------------------------------- */
 @import "layout/layout";
