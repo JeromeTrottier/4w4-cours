@@ -18,6 +18,10 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    img {
+      width: 100px;
+      height: auto;
+    }
   }
   .header__titre {
     font-size: clamp(3rem, 4vw, 7rem);

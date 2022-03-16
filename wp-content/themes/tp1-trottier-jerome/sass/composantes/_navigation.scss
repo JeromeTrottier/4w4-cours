@@ -1,4 +1,5 @@
 #burger {
+  z-index: 4;
   position: absolute;
   transition: transform 0.3s;
   transform: rotate(0);
@@ -11,10 +12,13 @@
   transform: rotate(90deg);
 }
 .menu-principal-container {
-  display: none;
+  display: block;
+  position: absolute;
+  transform: translate(-100%);
+  transition: 0.5s;
 }
 #chk-burger:checked ~ .menu-principal-container {
-  display: block;
+  transform: translate(0%);
 }
 
 .menu-principal-container {
@@ -32,9 +36,6 @@
     display: block;
     text-decoration: none;
     padding: 4px;
-
-    &:hover {
-    }
   }
 }
 
@@ -44,11 +45,16 @@
   }
   .site .menu-principal-container {
     display: block;
+    position: unset;
+    transform: unset;
   }
   .home #burger {
     display: block;
   }
   .home .menu-principal-container {
-    display: none;
+    display: block;
+    position: absolute;
+    transform: translate(-100%);
+    transition: 0.5s;
   }
 }

@@ -1,45 +1,43 @@
 /* ---------------- BACKGROUND */
-$color__background-body : hsl(224, 44%, 90%);
-$color__background-body-clip : hsl(204, 78%, 65%);
-$color__background-main : hsl(204, 49%, 89%);
-$color__background-cours : hsl(209, 100%, 91%);
-$color__background-header : hsl(207, 66%, 66%);
-$color__background-barre : hsl(200, 78%, 9%);
-$color__background-footer : hsl(225, 78%, 13%);
-$color__background-link : hsl(227, 22%, 84%);
-$color__background-link-hover : hsl(236, 64%, 44%);
+$color__background-body: #f4f4f3;
+$color__background-body-clip: #042a45;
+$color__background-main: #042a45;
+$color__background-cours: #042a45;
+$color__background-header: #042a45;
+$color__background-barre: hsl(200, 78%, 9%);
+$color__background-footer: hsl(225, 78%, 13%);
+$color__background-link: hsl(227, 22%, 84%);
+$color__background-link-hover: hsl(236, 64%, 44%);
 
 /* ---------------- LIENS */
-$color__link : hsl(18, 27%, 38%);
-$color__link-hover : hsl(0, 0%, 100%);
-$color__link-visited : hsl(19, 29%, 28%);
+$color__link: hsl(18, 27%, 38%);
+$color__link-hover: hsl(0, 0%, 100%);
+$color__link-visited: hsl(19, 29%, 28%);
 /* ---------------- LIENS FOOTER */
-$color__link__footer : hsl(0, 91%, 50%);
-$color__link__footer-hover : hsl(123, 80%, 49%);
-$color__link__footer-visited : hsl(231, 84%, 50%);
+$color__link__footer: hsl(0, 91%, 50%);
+$color__link__footer-hover: hsl(123, 80%, 49%);
+$color__link__footer-visited: hsl(231, 84%, 50%);
 /* ---------------- LIENS HEADER titre principal du site */
-$color__link__header : hsl(0, 82%, 68%);
-$color__link__header-hover : hsl(123, 63%, 72%);
-$color__link__header-visited : hsl(261, 62%, 56%);
+$color__link__header: #fcc704;
+$color__link__header-hover: #39d89d;
+$color__link__header-visited: #fcc704;
 /* ----------------------- couleur menu footer */
-$color__link__footer__menu : #fff;
-$color__link__footer__menu-visited : #ddd;
+$color__link__footer__menu: #fff;
+$color__link__footer__menu-visited: #ddd;
 $color__link__footer__menu-hover: #f00;
-$background__link__footer__menu : #444;
-$background__link__footer__menu-visited : #555; 
+$background__link__footer__menu: #444;
+$background__link__footer__menu-visited: #555;
 $background__link__footer__menu-hover: #222;
 /* ----------------------- couleur menu principal */
-$color__link__menu__principal : #0f0;
-$color__link__menu__principal-visited : #0d0; 
-$color__link__menu__principal-hover : #00f;
-$background__link__menu__principal : #ddd;
+$color__link__menu__principal: #0f0;
+$color__link__menu__principal-visited: #0d0;
+$color__link__menu__principal-hover: #00f;
+$background__link__menu__principal: #ddd;
 $background__link__menu__principal-visited: #ccc;
-$background__link__menu__principal-hover : #ddd;
-
-
+$background__link__menu__principal-hover: #ddd;
 
 /* ---------------- FONT */
-$color__font-header : rgb(214, 216, 228);
-$color__font-main :rgb(219, 223, 243);
-$color__font-barre : rgb(208, 216, 240);
-$color__font-footer : rgb(226, 231, 248);
+$color__font-header: rgb(214, 216, 228);
+$color__font-main: rgb(219, 223, 243);
+$color__font-barre: rgb(208, 216, 240);
+$color__font-footer: rgb(226, 231, 248);

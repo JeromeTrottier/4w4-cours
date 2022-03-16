@@ -351,6 +351,7 @@ html {
 /* ---------------------------------- */
 /* -----------------------------------*/
 a {
+  text-decoration: none;
   color: #7b5647;
 }
 
@@ -371,6 +372,7 @@ a:hover, a:active {
 }
 
 .site__footer a {
+  text-decoration: none;
   color: #f40b0b;
 }
 
@@ -391,15 +393,16 @@ a:hover, a:active {
 }
 
 .header__titre a {
-  color: #f06a6a;
+  text-decoration: none;
+  color: #fcc704;
 }
 
 .header__titre a:visited {
-  color: #7a49d4;
+  color: #fcc704;
 }
 
 .header__titre a:hover, .header__titre a:focus, .header__titre a:active {
-  color: #8be58f;
+  color: #39d89d;
 }
 
 .header__titre a:focus {
@@ -460,8 +463,9 @@ a:hover, a:active {
 COMPOSANTES
 --------------------------------------------------------- */
 .site__main {
+  height: 80vh;
   padding: 10px 15px;
-  background-color: #d5e6f1;
+  background-color: #042a45;
   border-radius: 5px;
   box-shadow: #39443e 1px -1px 10px;
 }
@@ -484,7 +488,7 @@ COMPOSANTES
 }
 
 .formation__cours {
-  background-color: #d1e9ff;
+  background-color: #042a45;
   box-shadow: #394044 1px -1px 10px;
   border-radius: 5px;
   margin: 10px;
@@ -526,7 +530,7 @@ COMPOSANTES
   display: flex;
   flex-flow: column;
   align-items: center;
-  background-color: #6faee2;
+  background-color: #042a45;
   color: #d6d8e4;
   padding-left: 10px;
 }
@@ -547,6 +551,11 @@ COMPOSANTES
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+
+.site__header__titre img {
+  width: 100px;
+  height: auto;
 }
 
 .site__header .header__titre {
@@ -579,6 +588,7 @@ COMPOSANTES
 }
 
 #burger {
+  z-index: 4;
   position: absolute;
   transition: transform 0.3s;
   transform: rotate(0);
@@ -593,11 +603,14 @@ COMPOSANTES
 }
 
 .menu-principal-container {
-  display: none;
+  display: block;
+  position: absolute;
+  transform: translate(-100%);
+  transition: 0.5s;
 }
 
 #chk-burger:checked ~ .menu-principal-container {
-  display: block;
+  transform: translate(0%);
 }
 
 .menu-principal-container {
@@ -627,12 +640,17 @@ COMPOSANTES
   }
   .site .menu-principal-container {
     display: block;
+    position: unset;
+    transform: unset;
   }
   .home #burger {
     display: block;
   }
   .home .menu-principal-container {
-    display: none;
+    display: block;
+    position: absolute;
+    transform: translate(-100%);
+    transition: 0.5s;
   }
 }
 
@@ -760,27 +778,17 @@ LAYOUT
 theme name: Lab 2 Lemieux Florence
 */
 .site {
-  background-color: rgba(218, 224, 241, 0.5);
+  background-color: rgba(244, 244, 243, 0.5);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.home::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #60b4eb;
-  z-index: -1;
-  clip-path: polygon(87% 0, 100% 0, 100% 100%, 58% 100%);
+.home {
+  background: linear-gradient(110deg, transparent 70%, #042a45 70%);
 }
 
 .site__header {
   grid-area: header;
-  background-color: rgba(111, 174, 226, 0.5);
+  background-color: #042a45;
 }
 
 .site__barre {
@@ -790,7 +798,7 @@ theme name: Lab 2 Lemieux Florence
 
 .site__main {
   grid-area: main;
-  background-color: rgba(213, 230, 241, 0.5);
+  background-color: rgba(4, 42, 69, 0.5);
 }
 
 .site__footer {
@@ -800,7 +808,6 @@ theme name: Lab 2 Lemieux Florence
 
 .site {
   display: grid;
-  gap: 10px;
   grid-template-columns: auto;
   grid-template-areas: "sidebar" "header" "main" "footer";
 }
