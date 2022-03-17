@@ -352,11 +352,11 @@ html {
 /* -----------------------------------*/
 a {
   text-decoration: none;
-  color: #7b5647;
+  color: black;
 }
 
 a:visited {
-  color: #5c4033;
+  color: black;
 }
 
 a:hover, a:focus, a:active {
@@ -511,7 +511,7 @@ COMPOSANTES
 
 .formation__titre {
   font-size: 2rem;
-  color: #dbdff3;
+  color: black;
   margin: 10px 0px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
@@ -522,9 +522,8 @@ COMPOSANTES
 }
 
 .formation__cours {
-  background-color: #042a45;
-  box-shadow: #394044 1px -1px 10px;
-  border-radius: 5px;
+  background: linear-gradient(135deg, transparent 80%, #39d89d 80%);
+  border: 2px solid black;
   margin: 10px;
   display: flex;
   flex-direction: column;
@@ -546,13 +545,13 @@ COMPOSANTES
 
 .cours__titre {
   font-size: 1.5rem;
-  color: #dbdff3;
+  color: black;
   margin: 5px 0px;
 }
 
 .cours__sigle {
-  font-size: 1.2rem;
-  color: #8a5353;
+  font-size: 2rem;
+  color: #042a45;
   margin: 0;
 }
 
@@ -664,11 +663,8 @@ COMPOSANTES
   box-shadow: 5px 5px white;
 }
 
-.menu-principal-container {
-  background-color: #39d89d;
-}
-
 .home .menu-principal-container {
+  background-color: #39d89d;
   padding: 30px 0 0 0;
 }
 
@@ -716,7 +712,7 @@ COMPOSANTES
 
 .site__footer {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  background-color: #07143b;
+  background-color: #050505;
   color: #e2e7f8;
   padding: 15px;
 }
@@ -880,7 +876,7 @@ LAYOUT
 
 .site__barre {
   grid-area: sidebar;
-  background-color: #051d29;
+  background-color: #39d89d;
 }
 
 .site__main {
@@ -890,7 +886,7 @@ LAYOUT
 
 .site__footer {
   grid-area: footer;
-  background-color: #07143b;
+  background-color: #050505;
 }
 
 .site {

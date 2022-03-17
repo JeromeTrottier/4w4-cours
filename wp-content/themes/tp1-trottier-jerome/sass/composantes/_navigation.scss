@@ -31,9 +31,10 @@
   box-shadow: 5px 5px white;
 }
 .menu-principal-container {
-  background-color: $color__background-nav;
+  // background-color: $color__background-nav;
 }
 .home .menu-principal-container {
+  background-color: $color__background-nav;
   padding: 30px 0 0 0;
 }
 .site .menu-principal-container {
