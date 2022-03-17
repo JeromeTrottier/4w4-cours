@@ -373,15 +373,15 @@ a:hover, a:active {
 
 .site__footer a {
   text-decoration: none;
-  color: #f40b0b;
+  color: #fcc704;
 }
 
 .site__footer a:visited {
-  color: #1435eb;
+  color: #fcc704;
 }
 
 .site__footer a:hover, .site__footer a:focus, .site__footer a:active {
-  color: #19e123;
+  color: #39d89d;
 }
 
 .site__footer a:focus {
@@ -615,14 +615,24 @@ COMPOSANTES
   justify-content: center;
 }
 
+.util__lien {
+  display: flex;
+  gap: 1rem;
+}
+
+.util__lien a {
+  width: auto;
+  height: auto;
+}
+
+.util__lien a svg {
+  color: #fcc704;
+}
+
 @media screen and (min-width: 800px) {
   .util {
     margin-left: auto;
   }
-}
-
-.util__lien {
-  display: flex;
 }
 
 #burger {
@@ -712,7 +722,7 @@ COMPOSANTES
 
 .site__footer {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  background-color: #050505;
+  background-color: #042a45;
   color: #e2e7f8;
   padding: 15px;
 }
@@ -730,8 +740,10 @@ COMPOSANTES
 }
 
 .site__footer__colonne section {
+  margin: 1rem 0;
+  border-right: 3px solid black;
+  border-radius: 5px;
   flex: 0 0 30%;
-  border: 1px solid #aaa;
 }
 
 .site__footer__ligne {
@@ -761,15 +773,45 @@ COMPOSANTES
 }
 
 .footer__menu__nav__ul .menu-item a svg {
-  color: #f40b0b;
+  color: #fcc704;
 }
 
 .footer__menu__nav__ul .menu-item a:hover svg {
-  color: #19e123;
+  color: #39d89d;
 }
 
-.cours__contenu {
+.single-post .site__main {
+  border: 1px solid black;
+  background-color: #fcc704;
+}
+
+.single-post .site__main .cours {
   display: flex;
+  flex-flow: column;
+}
+
+.single-post .site__main .cours__titre {
+  font-size: 2rem;
+}
+
+.single-post .site__main .cours__contenu {
+  display: flex;
+  flex-flow: column;
+}
+
+.single-post .site__main .cours__contenu-1 {
+  margin-top: 0rem;
+  padding: 0.5rem 5rem 0.5rem 0;
+  border-right: 5px solid black;
+  border-top: 1px solid #39d89d;
+  border-bottom: 1px solid #39d89d;
+  border-radius: 5px;
+}
+
+.single-post .site__main .cours__contenu-2 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .recherche {
@@ -886,7 +928,7 @@ LAYOUT
 
 .site__footer {
   grid-area: footer;
-  background-color: #050505;
+  background-color: #042a45;
 }
 
 .site {

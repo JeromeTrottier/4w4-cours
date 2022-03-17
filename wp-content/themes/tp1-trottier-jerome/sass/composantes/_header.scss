@@ -45,10 +45,18 @@
   padding: 1rem;
   width: 90%;
   justify-content: center;
-  @media screen and (min-width: $largeur__media--tablette) {
-    margin-left: auto;
-  }
   &__lien {
     display: flex;
+    gap: 1rem;
+    a {
+      width: auto;
+      height: auto;
+      svg {
+        color: $color__link__header;
+      }
+    }
+  }
+  @media screen and (min-width: $largeur__media--tablette) {
+    margin-left: auto;
   }
 }
