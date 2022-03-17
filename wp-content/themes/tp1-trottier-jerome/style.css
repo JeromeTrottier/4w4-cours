@@ -679,7 +679,8 @@ COMPOSANTES
 }
 
 .site .menu-principal-container {
-  padding: unset;
+  background-color: #39d89d;
+  padding: 30px 0 0 0;
 }
 
 .menu {
@@ -704,7 +705,9 @@ COMPOSANTES
     display: none;
   }
   .site .menu-principal-container {
+    background-color: unset;
     display: block;
+    padding: unset;
     position: unset;
     transform: unset;
   }
@@ -712,6 +715,7 @@ COMPOSANTES
     display: block;
   }
   .home .menu-principal-container {
+    background-color: #39d89d;
     display: block;
     padding: 30px 0 0 0;
     position: absolute;
@@ -825,17 +829,18 @@ COMPOSANTES
 .recherche__input {
   flex: 1;
   width: 100%;
-  background-color: rgba(195, 196, 223, 0.1);
+  background-color: rgba(57, 216, 157, 0.1);
   transition: all 0.3s;
   border: none;
   outline: none;
 }
 
 .recherche__input:focus {
-  background-color: rgba(195, 196, 223, 0.5);
+  background-color: #fcc704;
 }
 
 .recherche__bouton {
+  background-color: #39d89d;
   height: 100%;
   position: absolute;
   right: 0;

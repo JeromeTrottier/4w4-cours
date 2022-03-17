@@ -30,15 +30,13 @@
   transform: translate(0%);
   box-shadow: 5px 5px white;
 }
-.menu-principal-container {
-  // background-color: $color__background-nav;
-}
 .home .menu-principal-container {
   background-color: $color__background-nav;
   padding: 30px 0 0 0;
 }
 .site .menu-principal-container {
-  padding: unset;
+  background-color: $color__background-nav;
+  padding: 30px 0 0 0;
 }
 .menu {
   list-style-type: none;
@@ -60,7 +58,9 @@
     display: none;
   }
   .site .menu-principal-container {
+    background-color: unset;
     display: block;
+    padding: unset;
     position: unset;
     transform: unset;
   }
@@ -68,6 +68,7 @@
     display: block;
   }
   .home .menu-principal-container {
+    background-color: $color__background-nav;
     display: block;
     padding: 30px 0 0 0;
     position: absolute;
