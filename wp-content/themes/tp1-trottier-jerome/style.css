@@ -644,6 +644,9 @@ COMPOSANTES
     flex-flow: row;
     justify-content: flex-end;
   }
+  .util .recherche {
+    width: clamp(400px, 35%, 40%);
+  }
 }
 
 #burger {
@@ -877,7 +880,7 @@ COMPOSANTES
 
 @media screen and (min-width: 800px) {
   .recherche {
-    width: clamp(400px, 35%, 40%);
+    width: 100%;
   }
 }
 

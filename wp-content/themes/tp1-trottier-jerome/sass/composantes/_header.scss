@@ -57,5 +57,8 @@
     margin-left: auto;
     flex-flow: row;
     justify-content: flex-end;
+    .recherche {
+      width: clamp(400px, 35%, 40%);
+    }
   }
 }
