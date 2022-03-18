@@ -55,5 +55,7 @@
   }
   @media screen and (min-width: $largeur__media--tablette) {
     margin-left: auto;
+    flex-flow: row;
+    justify-content: flex-end;
   }
 }

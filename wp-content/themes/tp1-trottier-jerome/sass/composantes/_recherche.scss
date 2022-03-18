@@ -26,4 +26,7 @@
     justify-content: center;
     border: none;
   }
+  @media screen and (min-width: $largeur__media--tablette) {
+    width: clamp(400px, 35%, 40%);
+  }
 }

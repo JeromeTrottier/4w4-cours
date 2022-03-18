@@ -8,24 +8,29 @@
     //.site__footer__colonne
     display: flex;
     flex-flow: column;
-    justify-content: space-between;
     @media screen and (min-width: $largeur__media--tablette) {
       flex-flow: row;
     }
     section {
-      //  .site__footer__colonne  section
+      flex: 1;
+      text-align: center;
       margin: 1rem 0;
       border-right: 3px solid black;
       border-radius: 5px;
-      flex: 0 0 30%;
     }
     // .footer__adresse {
     //   //.site__footer__colonne .footer__adresse
     // }
     // .footer__article {
     // }
-    // .footer__lien {
-    // }
+    .footer__lien {
+      ul {
+        padding: 0;
+        li {
+          list-style: none;
+        }
+      }
+    }
   }
 
   &__ligne {
@@ -38,14 +43,6 @@
         text-align: center;
       }
     }
-    // .footer__auteur {
-    // }
-    // .footer__description {
-    // }
-    // .footer__recherche {
-    // }
-    // .footer__copyright {
-    // }
   }
 }
 

@@ -48,7 +48,8 @@
   margin: 0;
   padding: 0;
   a {
-    display: block;
+    display: flex;
+    align-items: center;
     text-decoration: none;
     padding: 4px;
   }
@@ -58,6 +59,10 @@
   .site #burger {
     display: none;
   }
+  .menu-principal-container {
+    width: unset;
+  }
+
   .site .menu-principal-container {
     background-color: unset;
     display: block;

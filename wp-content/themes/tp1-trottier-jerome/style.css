@@ -641,6 +641,8 @@ COMPOSANTES
 @media screen and (min-width: 800px) {
   .util {
     margin-left: auto;
+    flex-flow: row;
+    justify-content: flex-end;
   }
 }
 
@@ -705,7 +707,8 @@ COMPOSANTES
 }
 
 .menu-item a {
-  display: block;
+  display: flex;
+  align-items: center;
   text-decoration: none;
   padding: 4px;
 }
@@ -713,6 +716,9 @@ COMPOSANTES
 @media screen and (min-width: 800px) {
   .site #burger {
     display: none;
+  }
+  .menu-principal-container {
+    width: unset;
   }
   .site .menu-principal-container {
     background-color: unset;
@@ -744,7 +750,6 @@ COMPOSANTES
 .site__footer__colonne {
   display: flex;
   flex-flow: column;
-  justify-content: space-between;
 }
 
 @media screen and (min-width: 800px) {
@@ -754,10 +759,19 @@ COMPOSANTES
 }
 
 .site__footer__colonne section {
+  flex: 1;
+  text-align: center;
   margin: 1rem 0;
   border-right: 3px solid black;
   border-radius: 5px;
-  flex: 0 0 30%;
+}
+
+.site__footer__colonne .footer__lien ul {
+  padding: 0;
+}
+
+.site__footer__colonne .footer__lien ul li {
+  list-style: none;
 }
 
 .site__footer__ligne {
@@ -859,6 +873,12 @@ COMPOSANTES
   align-items: center;
   justify-content: center;
   border: none;
+}
+
+@media screen and (min-width: 800px) {
+  .recherche {
+    width: clamp(400px, 35%, 40%);
+  }
 }
 
 /* ---------------------------------------------------------
