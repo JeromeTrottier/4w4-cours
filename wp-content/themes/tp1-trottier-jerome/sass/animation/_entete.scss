@@ -17,6 +17,12 @@
     color: #fff;
     font-size: 3rem;
     animation: anim-entete 1s forwards, shadow-spin 1s infinite linear;
+
+    a {
+      height: 50px;
+      position: relative;
+      z-index: 0;
+    }
   }
 }
 

@@ -886,6 +886,12 @@ ANIMATION
   animation: anim-entete 1s forwards, shadow-spin 1s infinite linear;
 }
 
+.animation__bloc a {
+  height: 50px;
+  position: relative;
+  z-index: 0;
+}
+
 @keyframes anim-entete {
   0% {
     transform: translateY(-100vh);
