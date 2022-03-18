@@ -56,6 +56,18 @@
   }
 }
 
+@mixin svgLinks($couleur, $couleur--hover) {
+  svg {
+    color: $couleur;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $couleur--hover;
+    }
+  }
+}
+
 /* -----------------------------------*/
 a {
   @include links($color__link, $color__link-visited, $color__link-hover);
@@ -97,4 +109,8 @@ a {
     $background__link__menu__principal-visited,
     $background__link__menu__principal-hover
   );
+}
+
+.util__lien a {
+  @include svgLinks($color__link__header, $color__link__header-hover);
 }

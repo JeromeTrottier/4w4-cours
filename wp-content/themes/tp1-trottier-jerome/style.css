@@ -459,6 +459,14 @@ a:hover, a:active {
   outline: 0;
 }
 
+.util__lien a svg {
+  color: #fcc704;
+}
+
+.util__lien a svg:hover, .util__lien a svg:focus, .util__lien a svg:active {
+  color: #39d89d;
+}
+
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
@@ -623,10 +631,6 @@ COMPOSANTES
 .util__lien a {
   width: auto;
   height: auto;
-}
-
-.util__lien a svg {
-  color: #fcc704;
 }
 
 @media screen and (min-width: 800px) {
