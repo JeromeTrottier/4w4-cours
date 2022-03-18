@@ -536,6 +536,7 @@ COMPOSANTES
   display: flex;
   flex-direction: column;
   width: 100%;
+  transition: 0.5s;
   padding: 10px;
 }
 
@@ -549,6 +550,10 @@ COMPOSANTES
   .formation__cours {
     width: 30%;
   }
+}
+
+.formation__cours:hover {
+  box-shadow: 5px 5px #042a45;
 }
 
 .cours__titre {
