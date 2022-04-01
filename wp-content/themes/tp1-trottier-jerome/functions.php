@@ -3,7 +3,8 @@
 function cidw_4w4_enqueue()
 {
     //wp_enqueue_style('style_css', get_stylesheet_uri());
-    wp_enqueue_style('4w4-le-style', get_template_directory_uri() . '/style.css', array(), filemtime(get_template_directory() . '/style.css'), false);
+    wp_enqueue_style('cidw4w4-le-style', get_template_directory_uri() . '/style.css', array(), filemtime(get_template_directory() . '/style.css'), false);
+    wp_enqueue_style('cidw4w4-police-google', "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap", false);
 }
 
 add_action("wp_enqueue_scripts", "cidw_4w4_enqueue");

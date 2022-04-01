@@ -26,7 +26,6 @@
   }
   .header__titre {
     font-size: clamp(3rem, 4vw, 7rem);
-    font-family: $font__titre;
     transition: text-shadow 0.5s;
   }
   .header__titre:hover {
@@ -34,7 +33,6 @@
   }
   .header__description {
     font-size: clamp(2rem, 2vw, 4rem);
-    font-family: $font__main;
   }
 }
 
