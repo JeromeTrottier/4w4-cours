@@ -66,23 +66,28 @@
     }
     padding: 10px;
   }
+  .video, .creation-3d, .design, .utilitaire, .jeu, .web{
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-size: 2rem;
+  }
   .video {
-    background: linear-gradient(135deg, transparent 80%, purple 80%);
+    background-image: url('https://s2.svgbox.net/materialui.svg?ic=videocam'), linear-gradient(135deg, transparent 80%, $color__video 80%);
   }
   .creation-3d {
-    background: linear-gradient(135deg, transparent 80%, green 80%);
+    background-image: url('https://s2.svgbox.net/materialui.svg?ic=videocam'), linear-gradient(135deg, transparent 80%, $color__creation-3d 80%);
   }
   .design {
-    background: linear-gradient(135deg, transparent 80%, blue 80%);
+    background-image: url('https://s2.svgbox.net/materialui.svg?ic=design_services'), linear-gradient(135deg, transparent 80%, $color__design 80%);
   }
   .utilitaire {
-    background: linear-gradient(135deg, transparent 80%, orange 80%);
+    background-image: url('https://s2.svgbox.net/octicons.svg?ic=tools'), linear-gradient(135deg, transparent 80%, $color__utilitaire 80%);
   }
   .jeu {
-    background: linear-gradient(135deg, transparent 80%, red 80%);
+    background-image: url('https://s2.svgbox.net/materialui.svg?ic=games'), linear-gradient(135deg, transparent 80%, $color__jeu 80%);
   }
   .web {
-    background: linear-gradient(135deg, transparent 80%, rgb(225, 0, 255) 80%);
+    background-image: url('https://s2.svgbox.net/materialui.svg?ic=web'), linear-gradient(135deg, transparent 80%, $color__web 80%);
   }
   &__cours:hover {
     box-shadow: 5px 5px $color__background-header;

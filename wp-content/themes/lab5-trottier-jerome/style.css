@@ -19,6 +19,7 @@ VARIABLES
 /* ---------------- LIENS HEADER titre principal du site */
 /* ----------------------- couleur menu footer */
 /* ----------------------- couleur menu principal */
+/* ----------------------- couleurs categories */
 /* ---------------- FONT */
 /* ------------------------------------- points de rupture des media queries */
 /* ---------------------------------------------------------
@@ -551,28 +552,34 @@ COMPOSANTES
   }
 }
 
+.formation .video, .formation .creation-3d, .formation .design, .formation .utilitaire, .formation .jeu, .formation .web {
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-size: 2rem;
+}
+
 .formation .video {
-  background: linear-gradient(135deg, transparent 80%, purple 80%);
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=videocam"), linear-gradient(135deg, transparent 80%, purple 80%);
 }
 
 .formation .creation-3d {
-  background: linear-gradient(135deg, transparent 80%, green 80%);
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=videocam"), linear-gradient(135deg, transparent 80%, green 80%);
 }
 
 .formation .design {
-  background: linear-gradient(135deg, transparent 80%, blue 80%);
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=design_services"), linear-gradient(135deg, transparent 80%, orange 80%);
 }
 
 .formation .utilitaire {
-  background: linear-gradient(135deg, transparent 80%, orange 80%);
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=tools"), linear-gradient(135deg, transparent 80%, grey 80%);
 }
 
 .formation .jeu {
-  background: linear-gradient(135deg, transparent 80%, red 80%);
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=games"), linear-gradient(135deg, transparent 80%, red 80%);
 }
 
 .formation .web {
-  background: linear-gradient(135deg, transparent 80%, #e100ff 80%);
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=web"), linear-gradient(135deg, transparent 80%, blue 80%);
 }
 
 .formation__cours:hover {
@@ -910,7 +917,37 @@ COMPOSANTES
   list-style-type: none;
 }
 
+.menu-categorie-cours-container .menu .menu-item:nth-child(1) a {
+  color: black;
+  background-color: white;
+}
+
+.menu-categorie-cours-container .menu .menu-item:nth-child(2) a {
+  background-color: green;
+}
+
+.menu-categorie-cours-container .menu .menu-item:nth-child(3) a {
+  background-color: orange;
+}
+
+.menu-categorie-cours-container .menu .menu-item:nth-child(4) a {
+  background-color: red;
+}
+
+.menu-categorie-cours-container .menu .menu-item:nth-child(5) a {
+  background-color: grey;
+}
+
+.menu-categorie-cours-container .menu .menu-item:nth-child(6) a {
+  background-color: purple;
+}
+
+.menu-categorie-cours-container .menu .menu-item:nth-child(7) a {
+  background-color: blue;
+}
+
 .menu-categorie-cours-container .menu .menu-item a {
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -919,8 +956,6 @@ COMPOSANTES
   padding: 0.5rem;
   border: 1px solid black;
   border-radius: 0.5rem;
-  background-color: white;
-  color: #000;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
 }
