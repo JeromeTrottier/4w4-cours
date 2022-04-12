@@ -51,6 +51,26 @@
             </div>
         </a>
     </section>
+    <?php
+    //Afficher le menu accueil  de wordpress
+    wp_nav_menu(array(
+        'theme_location' => 'menu_accueil',
+        'container' => 'nav',
+        'container_class' => 'menu-accueil',
+        'menu_class' => 'menu-accueil__liste',
+        'menu_id' => 'menu-accueil__liste',
+        'echo' => true,
+        'fallback_cb' => 'wp_page_menu',
+        'before' => '',
+        'after' => '',
+        'link_before' => '',
+        'link_after' => '',
+        'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+        'depth' => 0,
+        'walker' => '',
+    ));
+
+    ?>
     <h1 class="site__main__titre">Parcours d'un Timien</h1>
     <div class="site__main__contenu-fake-bordure">
         <?php if (have_posts()) : the_post(); ?>

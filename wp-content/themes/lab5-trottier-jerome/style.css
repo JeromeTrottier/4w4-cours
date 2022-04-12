@@ -965,6 +965,60 @@ COMPOSANTES
   color: white;
 }
 
+.menu-accueil .menu-accueil__liste {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu-accueil .menu-accueil__liste .accueil__cours .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=pencil");
+}
+
+.menu-accueil .menu-accueil__liste .accueil__cotisation .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=credit-card");
+}
+
+.menu-accueil .menu-accueil__liste .accueil__adresse .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=location");
+}
+
+.menu-accueil .menu-accueil__liste .accueil__exemple .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=file");
+}
+
+.menu-accueil .menu-accueil__liste .menu-item {
+  list-style: none;
+  width: 15%;
+  padding: 10px;
+  background-color: #fc0404;
+}
+
+.menu-accueil .menu-accueil__liste .menu-item a {
+  display: flex;
+  height: 100%;
+  align-items: stretch;
+  flex-flow: column;
+  color: black;
+  font-size: 1.5rem;
+}
+
+.menu-accueil .menu-accueil__liste .menu-item a hr {
+  width: 100%;
+}
+
+.menu-accueil .menu-accueil__liste .menu-item a .menu-item-description {
+  font-size: 1rem;
+}
+
+.menu-accueil .menu-accueil__liste .menu-item a .menu-item-icone {
+  margin-top: auto;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */
