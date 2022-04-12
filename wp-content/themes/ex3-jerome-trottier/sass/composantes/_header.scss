@@ -17,10 +17,11 @@
     .custom-logo-link, .header__titre, .header__description{
       padding : 10px;
     }
-    .custom-logo-link {}
+    // .custom-logo-link {}
     .header__titre {
       font-size: clamp(3rem, 4vw, 8rem);
       font-family: $font__titre;
+      text-decoration: none;
     }
     .header__description {
       font-size: clamp(2rem, 2vw, 3rem);

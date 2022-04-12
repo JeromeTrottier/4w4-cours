@@ -6,11 +6,21 @@
     padding: 15px;
   // les colonnes du pied de page 
     &__colonne { //.site__footer__colonne
+        
         display :flex;
         flex-direction : column;
         section {
           flex : 0 0 100%;
-          border : 1px solid #aaa;
+          .liste-page {
+            padding: 0px;
+            li {
+              list-style: none;
+              a {
+                text-decoration: none;
+              }
+            }
+          }
+
         }
         @media screen and (min-width : $largeur__media--tablette){
           flex-direction: row;

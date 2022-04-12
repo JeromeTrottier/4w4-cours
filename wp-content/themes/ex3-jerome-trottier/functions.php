@@ -145,7 +145,9 @@ function my_register_sidebars() {
  */
 function cidw_4w4_pre_get_posts(WP_Query $query)
 {
-    if (is_admin() || !is_main_query() || !is_category(array('cours','web','jeu','design','utilitaire','creation-3d','video'))   )
+    if (is_admin() 
+        || !is_main_query() 
+        || !is_category(array('cours','web','jeu','design','utilitaire','creation-3d','video'))   )
     {
         return $query;
     }        
@@ -171,6 +173,7 @@ function cidw_4w4_query_vars($params){
 return $params;
 
 }
+
 /*
     $params[] = "cletri";
     $params[] = "ordre";
@@ -186,4 +189,3 @@ Ce hook nous permettra d'adapter la requête avant d'exécuter cette requête
 */ 
 
 add_filter('query_vars', 'cidw_4w4_query_vars' );
-?>

@@ -1,4 +1,4 @@
-.menu-accueil-container, .menu-evenement-container { //nav
+.menu-menu_accueil-container, .menu-menu-evenement-container { //nav
 
     .menu { //ul
         display : flex;
@@ -17,6 +17,8 @@
         }
 
         .menu-item { //li
+            border-right: 2px solid $color__titre__principal;
+            border-bottom: 2px solid $color__titre__principal;
             width : 15%;
             height : 250px;
             padding : 10px;

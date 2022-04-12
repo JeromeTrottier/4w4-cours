@@ -3,7 +3,7 @@
 				$couleur--hover)
 {
 	color: $couleur;
-
+	text-decoration: none;
 	&:visited {
 		color: $couleur--visited;
 	}
