@@ -30,7 +30,7 @@
         .menu-item { //li
             border-right: 2px solid $color__titre__principal;
             border-bottom: 2px solid $color__titre__principal;
-            width : 15%;
+            width : 20%;
             height : 250px;
             padding : 10px;
             background: linear-gradient(to top, transparent 50%, $color__link 50%);
@@ -72,14 +72,19 @@
                }
             }
         }    
+        
 
         }
+        @media screen and (max-width : $largeur__media--tablette){
+            flex-flow: column;
+            align-items: center;
+            .menu-item{
+                width : 100%;
+                height : auto;
+            }
 
-
-
+        }
     }
-
-
 
 } // fin .menu-accueil-container
 

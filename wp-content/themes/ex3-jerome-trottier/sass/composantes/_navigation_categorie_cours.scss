@@ -1,30 +1,25 @@
-.menu-categorie_cours-container{ // nav
+.menu-categorie-cours-container{ // nav
 
     .menu { // ul
         display : flex;
         list-style-type: none;
-
+        flex-flow: row wrap;
         .menu-item{ // li
-            margin : 0 15px;
-            background-color: $color__bouton__background;
                 a {
-                    color : $color__bouton__color;
                     padding : 5px;
                 }
 
             &:hover {
-                background-color: $color__bouton__background--hover;
-                a { 
-                    color : $color__bouton__color--hover;
-                }
+
             }
+        }
+        .menu-item:first-child{
+            width: 100%;
+            margin-bottom: 0.5rem;
         }
         .current-menu-item {
+            border-radius: 5px;
             background-color: $color__bouton__background--current;
-            a { 
-                color : $color__bouton__color--current;
-            }
         }
-
     }
 }

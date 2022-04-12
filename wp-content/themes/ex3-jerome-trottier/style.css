@@ -603,9 +603,9 @@ COMPOSANTES
 .formation__cours {
   background-repeat: no-repeat;
   background-position: 97% 3%;
-  background-color: #d1e9ff;
-  box-shadow: #394044 1px -1px 10px;
-  border-radius: 5px;
+  background-color: #efefef;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
   margin: 10px;
   display: flex;
   flex-direction: column;
@@ -819,7 +819,7 @@ COMPOSANTES
 .menu-menu_accueil-container .menu .menu-item, .menu-evenements-container .menu .menu-item {
   border-right: 2px solid #606060;
   border-bottom: 2px solid #606060;
-  width: 15%;
+  width: 20%;
   height: 250px;
   padding: 10px;
   background: linear-gradient(to top, transparent 50%, #60b4eb 50%);
@@ -865,6 +865,17 @@ COMPOSANTES
   transform: translateY(-5px);
 }
 
+@media screen and (max-width: 800px) {
+  .menu-menu_accueil-container .menu, .menu-evenements-container .menu {
+    flex-flow: column;
+    align-items: center;
+  }
+  .menu-menu_accueil-container .menu .menu-item, .menu-evenements-container .menu .menu-item {
+    width: 100%;
+    height: auto;
+  }
+}
+
 .menu-accueil-container .menu-item {
   background-color: #447cbb;
 }
@@ -897,35 +908,24 @@ COMPOSANTES
   color: #c7b363;
 }
 
-.menu-categorie_cours-container .menu {
+.menu-categorie-cours-container .menu {
   display: flex;
   list-style-type: none;
+  flex-flow: row wrap;
 }
 
-.menu-categorie_cours-container .menu .menu-item {
-  margin: 0 15px;
-  background-color: #447cbb;
-}
-
-.menu-categorie_cours-container .menu .menu-item a {
-  color: #eed70b;
+.menu-categorie-cours-container .menu .menu-item a {
   padding: 5px;
 }
 
-.menu-categorie_cours-container .menu .menu-item:hover {
-  background-color: #3552a1;
+.menu-categorie-cours-container .menu .menu-item:first-child {
+  width: 100%;
+  margin-bottom: 0.5rem;
 }
 
-.menu-categorie_cours-container .menu .menu-item:hover a {
-  color: #ece57f;
-}
-
-.menu-categorie_cours-container .menu .current-menu-item {
+.menu-categorie-cours-container .menu .current-menu-item {
+  border-radius: 5px;
   background-color: #081843;
-}
-
-.menu-categorie_cours-container .menu .current-menu-item a {
-  color: #fecf00;
 }
 
 /* ---------------------------------------------------- FOOTER */
