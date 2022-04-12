@@ -1,4 +1,4 @@
-.menu-menu_accueil-container, .menu-menu-evenement-container { //nav
+.menu-menu_accueil-container, .menu-evenements-container { //nav
 
     .menu { //ul
         display : flex;
@@ -15,7 +15,18 @@
         .accueil__etudiant .menu-item-icone{
             background-image: url('https://s2.svgbox.net/materialui.svg?ic=school');
         }
-
+        .accueil__journee-accueil .menu-item-icone{
+            background-image: url('https://s2.svgbox.net/materialui.svg?ic=today');
+        }
+        .accueil__presentation-projets .menu-item-icone{
+            background-image: url('https://s2.svgbox.net/materialui.svg?ic=description');
+        }
+        .accueil__porteouverte-decembre .menu-item-icone{
+            background-image: url('https://s2.svgbox.net/materialui.svg?ic=sensor_door');
+        }
+        .accueil__porteouverte-fevrier .menu-item-icone{
+            background-image: url('https://s2.svgbox.net/materialui.svg?ic=sensor_door');
+        }
         .menu-item { //li
             border-right: 2px solid $color__titre__principal;
             border-bottom: 2px solid $color__titre__principal;
