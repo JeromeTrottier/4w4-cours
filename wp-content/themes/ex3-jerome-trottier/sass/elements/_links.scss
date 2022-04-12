@@ -4,6 +4,7 @@
 {
 	color: $couleur;
 	text-decoration: none;
+	transition: 0.2s;
 	&:visited {
 		color: $couleur--visited;
 	}

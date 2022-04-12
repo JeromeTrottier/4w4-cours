@@ -423,6 +423,7 @@ theme name: Lab 2 Lemieux Florence
 a {
   color: #60b4eb;
   text-decoration: none;
+  transition: 0.2s;
 }
 
 a:visited {
@@ -444,6 +445,7 @@ a:hover, a:active {
 .site__footer a {
   color: #60b4eb;
   text-decoration: none;
+  transition: 0.2s;
 }
 
 .site__footer a:visited {
@@ -465,6 +467,7 @@ a:hover, a:active {
 .header__titre a {
   color: #60b4eb;
   text-decoration: none;
+  transition: 0.2s;
 }
 
 .header__titre a:visited {
@@ -782,19 +785,19 @@ COMPOSANTES
 }
 
 .menu-menu_accueil-container .menu .accueil__cours .menu-item-icone, .menu-menu-evenement-container .menu .accueil__cours .menu-item-icone {
-  background-image: url("https://s2.svgbox.net/octicons.svg?ic=bug-bold");
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=pencil");
 }
 
 .menu-menu_accueil-container .menu .accueil__prof .menu-item-icone, .menu-menu-evenement-container .menu .accueil__prof .menu-item-icone {
-  background-image: url("https://s2.svgbox.net/octicons.svg?ic=bug-bold");
+  background-image: url("https://s2.svgbox.net/crypto.svg?ic=dbc");
 }
 
 .menu-menu_accueil-container .menu .accueil__aide .menu-item-icone, .menu-menu-evenement-container .menu .accueil__aide .menu-item-icone {
-  background-image: url("https://s2.svgbox.net/octicons.svg?ic=bug-bold");
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=help");
 }
 
 .menu-menu_accueil-container .menu .accueil__etudiant .menu-item-icone, .menu-menu-evenement-container .menu .accueil__etudiant .menu-item-icone {
-  background-image: url("https://s2.svgbox.net/octicons.svg?ic=bug-bold");
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=school");
 }
 
 .menu-menu_accueil-container .menu .menu-item, .menu-menu-evenement-container .menu .menu-item {
@@ -803,6 +806,10 @@ COMPOSANTES
   width: 15%;
   height: 250px;
   padding: 10px;
+  background: linear-gradient(to top, transparent 50%, #60b4eb 50%);
+  background-size: 100% 200%;
+  background-position: 0 -100%;
+  transition: 0.4s;
 }
 
 .menu-menu_accueil-container .menu .menu-item a, .menu-menu-evenement-container .menu .menu-item a {
@@ -829,6 +836,17 @@ COMPOSANTES
   background-repeat: no-repeat;
   margin-top: auto;
   background-size: cover;
+  transition: 0.2s;
+}
+
+.menu-menu_accueil-container .menu .menu-item:hover, .menu-menu-evenement-container .menu .menu-item:hover {
+  background-position: 0 -60%;
+}
+
+.menu-menu_accueil-container .menu .menu-item:hover a .menu-item-icone, .menu-menu-evenement-container .menu .menu-item:hover a .menu-item-icone {
+  width: 4rem;
+  height: 4rem;
+  transform: translateY(-5px);
 }
 
 .menu-accueil-container .menu-item {
