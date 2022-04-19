@@ -1,0 +1,19 @@
+.modal{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background: rgba(0,0,0,0.5);
+    border: 10px solid rgb(255, 0, 0);
+    background-color: aqua;
+    top : 25%;
+    left: 25%;
+    z-index: 100;
+    transition: 0.5s ease-out;
+    &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0px 0px 10px grey;
+    }
+}
+
+
+

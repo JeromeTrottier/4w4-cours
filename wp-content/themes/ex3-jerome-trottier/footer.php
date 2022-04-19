@@ -40,7 +40,9 @@
         </section>
     </div>
 </footer>
-
+<div class="modal">
+    Ceci est un test de modal le fonctionnement d'une boite de dialogue
+</div>
 </body>
 <?php wp_footer(); ?>
 

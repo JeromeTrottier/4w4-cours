@@ -35,11 +35,13 @@ LAYOUT
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
+@import "composantes/boite_modal";
 @import "composantes/contenu";
 @import "composantes/header";
 @import "composantes/navigation";
 @import "composantes/navigation_accueil";
 @import "composantes/navigation_categorie_cours";
+
 /* ---------------------------------------------------- FOOTER */
 @import "composantes/footer";
 @import "composantes/single_cours";
