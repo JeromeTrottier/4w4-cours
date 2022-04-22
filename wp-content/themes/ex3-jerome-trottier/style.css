@@ -581,8 +581,8 @@ p {
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
-.modal {
-  position: absolute;
+.boite__modal.ouvert {
+  position: fixed;
   width: 50%;
   height: 50%;
   background: rgba(0, 0, 0, 0.5);
@@ -594,8 +594,7 @@ COMPOSANTES
   transition: 0.5s ease-out;
 }
 
-.modal:hover {
-  transform: translateY(-10px);
+.boite__modal.ouvert:hover {
   box-shadow: 0px 0px 10px grey;
 }
 
@@ -657,6 +656,10 @@ COMPOSANTES
 
 .cours__description {
   font-size: 1rem;
+}
+
+.cours__desc__full {
+  display: none;
 }
 
 .web {
