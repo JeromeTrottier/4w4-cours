@@ -581,13 +581,18 @@ p {
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
+.boite__modal {
+  display: none;
+}
+
 .boite__modal.ouvert {
+  display: block;
   position: fixed;
   width: 50%;
   height: 50%;
   background: rgba(0, 0, 0, 0.5);
-  border: 10px solid red;
-  background-color: aqua;
+  border: 10px solid #262626;
+  background-color: #e6f0ff;
   top: 25%;
   left: 25%;
   z-index: 100;

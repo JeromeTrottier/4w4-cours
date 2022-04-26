@@ -1,13 +1,14 @@
-// .boite__modal{
-    
-// }
+.boite__modal{
+    display: none;
+}
 .boite__modal.ouvert{
+    display: block;
     position: fixed;
     width: 50%;
     height: 50%;
     background: rgba(0,0,0,0.5);
-    border: 10px solid rgb(255, 0, 0);
-    background-color: aqua;
+    border: 10px solid $couleur__boite-modal;
+    background-color: $couleur__boite-modal-background;
     top : 25%;
     left: 25%;
     z-index: 100;

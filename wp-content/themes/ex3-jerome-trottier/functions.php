@@ -154,8 +154,8 @@ function cidw_4w4_pre_get_posts(WP_Query $query)
 {
     if (
         is_admin()
-        || !is_main_query()
-        || !is_category(array('cours', 'web', 'jeu', 'design', 'utilitaire', 'creation-3d', 'video'))
+        || !$query->is_main_query()
+        || !$query->is_category(array('cours', 'web', 'jeu', 'design', 'utilitaire', 'creation-3d', 'video'))
     ) {
         return $query;
     } else {
