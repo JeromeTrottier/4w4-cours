@@ -24,5 +24,5 @@ $value = get_field("departement");
     <p class="cours__sigle"><?= $sigleCours; ?> </p>
     <p class="cours__desc"> <?= wp_trim_words($descCours, 15, '<button class="cours__desc__suite" href="#"> La suite...</button>'); ?></p>
     <p class="cours__desc__full"><?= $descCours; ?></p>
-    <p class="departement"> 582 - TIM - Techniques d'intégration multimédia </p>
+    <p class="departement"> <?php the_field('departement') ?> </p>
 </article>
