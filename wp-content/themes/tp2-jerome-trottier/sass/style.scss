@@ -35,8 +35,10 @@ LAYOUT
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
+@import "composantes/accueil";
 @import "composantes/boite_modal";
 @import "composantes/contenu";
+@import "composantes/galerie";
 @import "composantes/header";
 @import "composantes/navigation";
 @import "composantes/navigation_accueil";

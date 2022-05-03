@@ -351,9 +351,6 @@ html {
 /* --------------------------------------------------------
 LAYOUT
 --------------------------------------------------------- */
-/*
-theme name: Lab 2 Lemieux Florence
-*/
 .site {
   background-color: rgba(255, 255, 255, 0.5);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -377,6 +374,8 @@ theme name: Lab 2 Lemieux Florence
 .site__header {
   grid-area: header;
   background-color: rgba(38, 38, 38, 0.5);
+  display: flex;
+  flex-flow: column;
 }
 
 .site__barre {
@@ -581,6 +580,10 @@ p {
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
+.home .site__main {
+  align-items: center;
+}
+
 .boite__modal {
   display: none;
 }
@@ -601,6 +604,12 @@ COMPOSANTES
 
 .boite__modal.ouvert:hover {
   box-shadow: 0px 0px 10px grey;
+}
+
+.boite__modal.ouvert img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .site__main {
@@ -689,6 +698,16 @@ COMPOSANTES
 
 .creation-3d {
   background-image: url("https://s2.svgbox.net/materialui.svg?ic=view_in_ar");
+}
+
+.galerie {
+  width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  .galerie {
+    width: 75%;
+  }
 }
 
 .site__header {

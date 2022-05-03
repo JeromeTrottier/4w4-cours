@@ -1,7 +1,3 @@
-/*
-theme name: Lab 2 Lemieux Florence
-*/
-
 .site {
     //background-color: rgb(122, 176, 207);
     background-color: rgba($color__background-body,.5);
@@ -29,8 +25,8 @@ theme name: Lab 2 Lemieux Florence
 .site__header{
     grid-area: header;  
     background-color: rgba($color__background-header, .5);
-
-
+    display: flex;
+    flex-flow: column;
 }
 
 .site__barre{

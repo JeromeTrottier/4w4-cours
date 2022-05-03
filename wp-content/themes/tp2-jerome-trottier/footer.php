@@ -1,4 +1,4 @@
-<footer class="site__footer" style="background-color:<?= get_theme_mod('couleur_background_footer'); ?>">
+<footer class="site__footer">
     <div class="site__footer__colonne">
         <section class="footer__article">
             <?php get_sidebar("footer_colonne_1");  ?>
@@ -42,7 +42,8 @@
 </footer>
 <div class="boite__modal">
     <button class="boite__modale__fermer">X</button>
-    <article class="boite__modal__texte">Ceci est un test de modal le fonctionnement d'une boite de dialogue</article>
+    <article class="boite__modal__texte">
+    </article>
 </div>
 </body>
 <?php wp_footer(); ?>

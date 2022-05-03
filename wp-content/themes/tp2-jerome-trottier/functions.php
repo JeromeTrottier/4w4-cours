@@ -6,8 +6,16 @@ function cidw_4w4_enqueue()
     //wp_enqueue_style('style_css', get_stylesheet_uri());
     wp_enqueue_style('cidw-4w4-le-style', get_template_directory_uri() . '/style.css', array(), filemtime(get_template_directory() . '/style.css'), false);
     wp_enqueue_style('cidw-4w4-police-google', "https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@300;400;500&family=Roboto&display=swap", false);
-    wp_enqueue_script('cidw-4w4-js-modal', get_template_directory_uri() . '/js/boite_modal.js', array(), '1.0.0', filemtime(get_template_directory() . '/style.css'), true);
+    wp_register_script('cidw-4w4-js-modal', get_template_directory_uri() . '/js/boite_modal.js', array(), '1.0.0', filemtime(get_template_directory() . '/js/boite_modal.js'), true);
+    wp_register_script('cidw-4w4-js-caroussel', get_template_directory_uri() . '/js/caroussel.js', array(), '1.0.0', filemtime(get_template_directory() . '/js/caroussel.js'), true);
+    if (is_front_page()) {
+        wp_enqueue_script('cidw-4w4-js-caroussel');
+    }
+    if (is_category('cours', 'web', 'design', 'creation-3d', 'video', 'jeu', 'utilitaire')) {
+        wp_enqueue_script('cidw-4w4-js-modal');
+    }
 }
+
 
 add_action("wp_enqueue_scripts", "cidw_4w4_enqueue");
 
