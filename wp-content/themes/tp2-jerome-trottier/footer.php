@@ -45,6 +45,10 @@
     <article class="boite__modal__texte">
     </article>
 </div>
+<div id="boite__carrousel" class="boite__carrousel">
+    <button class="boite__carrousel__fermer">X</button>
+    <section class="boite__carrousel__navigation"></section>
+</div>
 </body>
 <?php wp_footer(); ?>
 
