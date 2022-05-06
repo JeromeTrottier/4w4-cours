@@ -782,6 +782,15 @@ COMPOSANTES
   width: 100%;
 }
 
+.galerie img {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.galerie img:hover {
+  opacity: 0.8;
+}
+
 @media screen and (min-width: 800px) {
   .galerie {
     width: 75%;
