@@ -16,9 +16,9 @@
 
                <h3>Horaires et dates de l'atelier</h3>
                <p>Durée de chacune des séances est de <span class="important"><?php the_field('duree_dune_seance_datelier') ?> heures</span></p>
-               <p>Date de début : <?php the_field('date_de_debut_de_latelier') ?></p>
-               <p>Date de fin : <?php the_field('date_de_fin_de_latelier') ?></p>
-               <p>La formation se donnera : <?php the_field('jours_de_la_semaine_de_latelier') ?></p>
+               <p>Date de début : <span class="important"><?php the_field('date_de_debut_de_latelier') ?></span></p>
+               <p>Date de fin : <span class="important"><?php the_field('date_de_fin_de_latelier') ?></span></p>
+               <p>La formation se donnera : <span class="important"><?php the_field('jours_de_la_semaine_de_latelier') ?></span></p>
                <p>L'horaire : De <span class="important"><?php the_field('heure_du_debut_de_latelier') ?></span> à <span class="important"><?php the_field('heure_de_fin') ?></span></p>
                <?php the_content() ?>
           <?php endif ?>
