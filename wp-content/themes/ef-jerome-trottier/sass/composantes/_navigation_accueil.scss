@@ -1,4 +1,4 @@
-.menu-menu_accueil-container, .menu-evenements-container { //nav
+.menu-menu_accueil-container, .menu-evenements-container, .menu-atelier-container { //nav
 
     .menu { //ul
         display : flex;
@@ -26,6 +26,18 @@
         }
         .accueil__porteouverte-fevrier .menu-item-icone{
             background-image: url('https://s2.svgbox.net/materialui.svg?ic=sensor_door');
+        }
+        .accueil__web-base .menu-item-icone{
+            background-image: url('https://s2.svgbox.net/files.svg?ic=html');
+        }
+        .accueil__css-avance .menu-item-icone{
+            background-image: url('https://s2.svgbox.net/files.svg?ic=css');
+        }
+        .accueil__react .menu-item-icone{
+            background-image: url('https://s2.svgbox.net/files.svg?ic=reactjs');
+        }
+        .accueil__intro-git .menu-item-icone{
+            background-image: url('https://s2.svgbox.net/files.svg?ic=git');
         }
         .menu-item { //li
             border-right: 2px solid $color__titre__principal;

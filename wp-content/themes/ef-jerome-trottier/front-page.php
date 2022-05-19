@@ -1,6 +1,5 @@
 <?php get_header() ?>
 <main class="site__main" style="background-color: <?= get_theme_mod('couleur_background_main') ?>">
-
         <h2>Activités en TIM</h2>
         <?php
         wp_nav_menu(array(

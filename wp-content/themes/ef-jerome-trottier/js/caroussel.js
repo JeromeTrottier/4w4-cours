@@ -1,5 +1,6 @@
 (function () {
     console.log("Vive le caroussel");
+    console.log("gmmm");
     const carrousel = document.getElementById('boite__carrousel');
     const images = document.querySelectorAll('.galerie img');
     const btnFermerCarrousel = document.querySelector('.boite__carrousel__fermer');

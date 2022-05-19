@@ -905,44 +905,60 @@ COMPOSANTES
   }
 }
 
-.menu-menu_accueil-container .menu, .menu-evenements-container .menu {
+.menu-menu_accueil-container .menu, .menu-evenements-container .menu, .menu-atelier-container .menu {
   display: flex;
   justify-content: space-around;
 }
 
-.menu-menu_accueil-container .menu .accueil__cours .menu-item-icone, .menu-evenements-container .menu .accueil__cours .menu-item-icone {
+.menu-menu_accueil-container .menu .accueil__cours .menu-item-icone, .menu-evenements-container .menu .accueil__cours .menu-item-icone, .menu-atelier-container .menu .accueil__cours .menu-item-icone {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=pencil");
 }
 
-.menu-menu_accueil-container .menu .accueil__prof .menu-item-icone, .menu-evenements-container .menu .accueil__prof .menu-item-icone {
+.menu-menu_accueil-container .menu .accueil__prof .menu-item-icone, .menu-evenements-container .menu .accueil__prof .menu-item-icone, .menu-atelier-container .menu .accueil__prof .menu-item-icone {
   background-image: url("https://s2.svgbox.net/crypto.svg?ic=dbc");
 }
 
-.menu-menu_accueil-container .menu .accueil__aide .menu-item-icone, .menu-evenements-container .menu .accueil__aide .menu-item-icone {
+.menu-menu_accueil-container .menu .accueil__aide .menu-item-icone, .menu-evenements-container .menu .accueil__aide .menu-item-icone, .menu-atelier-container .menu .accueil__aide .menu-item-icone {
   background-image: url("https://s2.svgbox.net/materialui.svg?ic=help");
 }
 
-.menu-menu_accueil-container .menu .accueil__etudiant .menu-item-icone, .menu-evenements-container .menu .accueil__etudiant .menu-item-icone {
+.menu-menu_accueil-container .menu .accueil__etudiant .menu-item-icone, .menu-evenements-container .menu .accueil__etudiant .menu-item-icone, .menu-atelier-container .menu .accueil__etudiant .menu-item-icone {
   background-image: url("https://s2.svgbox.net/materialui.svg?ic=school");
 }
 
-.menu-menu_accueil-container .menu .accueil__journee-accueil .menu-item-icone, .menu-evenements-container .menu .accueil__journee-accueil .menu-item-icone {
+.menu-menu_accueil-container .menu .accueil__journee-accueil .menu-item-icone, .menu-evenements-container .menu .accueil__journee-accueil .menu-item-icone, .menu-atelier-container .menu .accueil__journee-accueil .menu-item-icone {
   background-image: url("https://s2.svgbox.net/materialui.svg?ic=today");
 }
 
-.menu-menu_accueil-container .menu .accueil__presentation-projets .menu-item-icone, .menu-evenements-container .menu .accueil__presentation-projets .menu-item-icone {
+.menu-menu_accueil-container .menu .accueil__presentation-projets .menu-item-icone, .menu-evenements-container .menu .accueil__presentation-projets .menu-item-icone, .menu-atelier-container .menu .accueil__presentation-projets .menu-item-icone {
   background-image: url("https://s2.svgbox.net/materialui.svg?ic=description");
 }
 
-.menu-menu_accueil-container .menu .accueil__porteouverte-decembre .menu-item-icone, .menu-evenements-container .menu .accueil__porteouverte-decembre .menu-item-icone {
+.menu-menu_accueil-container .menu .accueil__porteouverte-decembre .menu-item-icone, .menu-evenements-container .menu .accueil__porteouverte-decembre .menu-item-icone, .menu-atelier-container .menu .accueil__porteouverte-decembre .menu-item-icone {
   background-image: url("https://s2.svgbox.net/materialui.svg?ic=sensor_door");
 }
 
-.menu-menu_accueil-container .menu .accueil__porteouverte-fevrier .menu-item-icone, .menu-evenements-container .menu .accueil__porteouverte-fevrier .menu-item-icone {
+.menu-menu_accueil-container .menu .accueil__porteouverte-fevrier .menu-item-icone, .menu-evenements-container .menu .accueil__porteouverte-fevrier .menu-item-icone, .menu-atelier-container .menu .accueil__porteouverte-fevrier .menu-item-icone {
   background-image: url("https://s2.svgbox.net/materialui.svg?ic=sensor_door");
 }
 
-.menu-menu_accueil-container .menu .menu-item, .menu-evenements-container .menu .menu-item {
+.menu-menu_accueil-container .menu .accueil__web-base .menu-item-icone, .menu-evenements-container .menu .accueil__web-base .menu-item-icone, .menu-atelier-container .menu .accueil__web-base .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=html");
+}
+
+.menu-menu_accueil-container .menu .accueil__css-avance .menu-item-icone, .menu-evenements-container .menu .accueil__css-avance .menu-item-icone, .menu-atelier-container .menu .accueil__css-avance .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=css");
+}
+
+.menu-menu_accueil-container .menu .accueil__react .menu-item-icone, .menu-evenements-container .menu .accueil__react .menu-item-icone, .menu-atelier-container .menu .accueil__react .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=reactjs");
+}
+
+.menu-menu_accueil-container .menu .accueil__intro-git .menu-item-icone, .menu-evenements-container .menu .accueil__intro-git .menu-item-icone, .menu-atelier-container .menu .accueil__intro-git .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=git");
+}
+
+.menu-menu_accueil-container .menu .menu-item, .menu-evenements-container .menu .menu-item, .menu-atelier-container .menu .menu-item {
   border-right: 2px solid #606060;
   border-bottom: 2px solid #606060;
   width: 20%;
@@ -954,7 +970,7 @@ COMPOSANTES
   transition: 0.4s;
 }
 
-.menu-menu_accueil-container .menu .menu-item a, .menu-evenements-container .menu .menu-item a {
+.menu-menu_accueil-container .menu .menu-item a, .menu-evenements-container .menu .menu-item a, .menu-atelier-container .menu .menu-item a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -963,15 +979,15 @@ COMPOSANTES
   height: 100%;
 }
 
-.menu-menu_accueil-container .menu .menu-item a hr, .menu-evenements-container .menu .menu-item a hr {
+.menu-menu_accueil-container .menu .menu-item a hr, .menu-evenements-container .menu .menu-item a hr, .menu-atelier-container .menu .menu-item a hr {
   width: 90%;
 }
 
-.menu-menu_accueil-container .menu .menu-item a .menu-item-description, .menu-evenements-container .menu .menu-item a .menu-item-description {
+.menu-menu_accueil-container .menu .menu-item a .menu-item-description, .menu-evenements-container .menu .menu-item a .menu-item-description, .menu-atelier-container .menu .menu-item a .menu-item-description {
   font-size: 1rem;
 }
 
-.menu-menu_accueil-container .menu .menu-item a .menu-item-icone, .menu-evenements-container .menu .menu-item a .menu-item-icone {
+.menu-menu_accueil-container .menu .menu-item a .menu-item-icone, .menu-evenements-container .menu .menu-item a .menu-item-icone, .menu-atelier-container .menu .menu-item a .menu-item-icone {
   width: 3rem;
   height: 3rem;
   background-position: center;
@@ -981,22 +997,22 @@ COMPOSANTES
   transition: 0.2s;
 }
 
-.menu-menu_accueil-container .menu .menu-item:hover, .menu-evenements-container .menu .menu-item:hover {
+.menu-menu_accueil-container .menu .menu-item:hover, .menu-evenements-container .menu .menu-item:hover, .menu-atelier-container .menu .menu-item:hover {
   background-position: 0 -60%;
 }
 
-.menu-menu_accueil-container .menu .menu-item:hover a .menu-item-icone, .menu-evenements-container .menu .menu-item:hover a .menu-item-icone {
+.menu-menu_accueil-container .menu .menu-item:hover a .menu-item-icone, .menu-evenements-container .menu .menu-item:hover a .menu-item-icone, .menu-atelier-container .menu .menu-item:hover a .menu-item-icone {
   width: 4rem;
   height: 4rem;
   transform: translateY(-5px);
 }
 
 @media screen and (max-width: 800px) {
-  .menu-menu_accueil-container .menu, .menu-evenements-container .menu {
+  .menu-menu_accueil-container .menu, .menu-evenements-container .menu, .menu-atelier-container .menu {
     flex-flow: column;
     align-items: center;
   }
-  .menu-menu_accueil-container .menu .menu-item, .menu-evenements-container .menu .menu-item {
+  .menu-menu_accueil-container .menu .menu-item, .menu-evenements-container .menu .menu-item, .menu-atelier-container .menu .menu-item {
     width: 100%;
     height: auto;
   }
