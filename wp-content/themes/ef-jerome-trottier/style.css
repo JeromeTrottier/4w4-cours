@@ -584,6 +584,12 @@ COMPOSANTES
   align-items: center;
 }
 
+.site__main .atelier p span.important {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #eed70b;
+}
+
 .boite__modal, .boite__carrousel {
   transform: scale(0);
   transition: 0.5s ease-out;
