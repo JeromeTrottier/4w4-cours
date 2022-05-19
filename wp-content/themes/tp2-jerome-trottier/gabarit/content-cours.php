@@ -9,7 +9,7 @@ $value = get_field("departement");
     $titreFiltreCours = substr($titre, 7, -6);
     // $nbHeures = substr($titre, -6);
     $nbHeures = the_field("nombre_dheures");
-    $sigleCours = substr($titre, 0, 7);
+    $sigleCours = substr($titre, 4, 3);
     $descCours = get_the_content();
     $departement = the_field("departement");
     ?>

@@ -1,5 +1,5 @@
 /*
-theme name: Ex3 - Jerome Trottier
+theme name: TP2 - Jerome Trottier
 Author: Jérôme Trottier
 Author URI: https://github.com/JeromeTrottier
 Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
@@ -35,8 +35,10 @@ LAYOUT
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
+@import "composantes/accueil";
 @import "composantes/boite_modal";
 @import "composantes/contenu";
+@import "composantes/galerie";
 @import "composantes/header";
 @import "composantes/navigation";
 @import "composantes/navigation_accueil";
@@ -50,5 +52,6 @@ COMPOSANTES
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */
+@import "animation/burger";
 @import "animation/entete";
 

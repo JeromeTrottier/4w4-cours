@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-theme name: Ex3 - Jerome Trottier
+theme name: TP2 - Jerome Trottier
 Author: Jérôme Trottier
 Author URI: https://github.com/JeromeTrottier
 Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
@@ -351,9 +351,6 @@ html {
 /* --------------------------------------------------------
 LAYOUT
 --------------------------------------------------------- */
-/*
-theme name: Lab 2 Lemieux Florence
-*/
 .site {
   background-color: rgba(255, 255, 255, 0.5);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -377,6 +374,8 @@ theme name: Lab 2 Lemieux Florence
 .site__header {
   grid-area: header;
   background-color: rgba(38, 38, 38, 0.5);
+  display: flex;
+  flex-flow: column;
 }
 
 .site__barre {
@@ -581,26 +580,114 @@ p {
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
-.boite__modal {
-  display: none;
+.home .site__main {
+  align-items: center;
 }
 
-.boite__modal.ouvert {
-  display: block;
-  position: fixed;
-  width: 50%;
-  height: 50%;
-  background: rgba(0, 0, 0, 0.5);
-  border: 10px solid #262626;
-  background-color: #e6f0ff;
-  top: 25%;
-  left: 25%;
-  z-index: 100;
+.boite__modal, .boite__carrousel {
+  transform: scale(0);
   transition: 0.5s ease-out;
 }
 
-.boite__modal.ouvert:hover {
+.boite__modal.ouvert, .boite__carrousel.ouvert {
+  transform: scale(1);
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  border: 10px solid #262626;
+  background-color: #e6f0ff;
+  z-index: 100;
+}
+
+.boite__modal.ouvert:hover, .boite__carrousel.ouvert:hover {
   box-shadow: 0px 0px 10px grey;
+}
+
+.boite__modal.ouvert img, .boite__carrousel.ouvert img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.boite__modal {
+  height: 50%;
+  left: 25%;
+  width: 50%;
+  top: 25%;
+}
+
+.boite__carrousel {
+  overflow: hidden;
+  height: 75%;
+  left: 12.5%;
+  width: 75%;
+  top: 12.5%;
+}
+
+.boite__carrousel .boite__carrousel__img {
+  transition: 0.5s;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  object-fit: cover;
+  height: 100%;
+}
+
+.boite__carrousel .boite__carrousel__img img {
+  display: block;
+  z-index: -1;
+  object-fit: cover;
+  height: 100%;
+}
+
+.boite__carrousel > button {
+  cursor: pointer;
+  background-color: #60b4eb;
+  border: 1px solid black;
+  color: #262626;
+  font-size: 2em;
+  transition: 0.2s ease-out;
+}
+
+.boite__carrousel > button:hover {
+  background-color: #262626;
+  color: #e6f0ff;
+}
+
+.boite__carrousel > button:focus {
+  background-color: black;
+}
+
+.boite__carrousel__navigation {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  z-index: 1;
+}
+
+.boite__carrousel__navigation button {
+  cursor: pointer;
+  margin: 1rem 0.5rem;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #e6f0ff;
+  border: 1px solid black;
+  color: #262626;
+  font-size: 2em;
+  transition: 0.2s ease-out;
+}
+
+.boite__carrousel__navigation button:hover {
+  background-color: #262626;
+  color: #e6f0ff;
+}
+
+.boite__carrousel__navigation button:focus {
+  background-color: black;
 }
 
 .site__main {
@@ -691,6 +778,25 @@ COMPOSANTES
   background-image: url("https://s2.svgbox.net/materialui.svg?ic=view_in_ar");
 }
 
+.galerie {
+  width: 100%;
+}
+
+.galerie img {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.galerie img:hover {
+  opacity: 0.8;
+}
+
+@media screen and (min-width: 800px) {
+  .galerie {
+    width: 75%;
+  }
+}
+
 .site__header {
   display: flex;
   flex-direction: column;
@@ -749,16 +855,10 @@ COMPOSANTES
 
 #burger {
   position: absolute;
-  transition: transform .3s;
-  transform: rotate(0);
 }
 
 #chk-burger {
   display: none;
-}
-
-#chk-burger:checked ~ #burger {
-  transform: rotate(90deg);
 }
 
 .menu-principal-container {
@@ -1091,6 +1191,51 @@ COMPOSANTES
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */
+.burger {
+  cursor: pointer;
+  margin: 10px;
+  width: 2rem;
+  height: 2rem;
+  transition: 0.5s;
+  border-radius: 25%;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.burger__ligne {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.burger__ligne:nth-child(1) {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 20%, 0% 20%);
+}
+
+.burger__ligne:nth-child(2) {
+  clip-path: polygon(0% 40%, 100% 40%, 100% 60%, 0% 60%);
+}
+
+.burger__ligne:nth-child(3) {
+  clip-path: polygon(0% 80%, 100% 80%, 100% 100%, 0% 100%);
+}
+
+#chk-burger:checked ~ #burger .burger__ligne:nth-child(1) {
+  clip-path: polygon(7.1% -7.1%, 107.1% 92.9%, 92.9% 107.1%, -7.1% 7.1%);
+}
+
+#chk-burger:checked ~ #burger .burger__ligne:nth-child(2) {
+  clip-path: polygon(45% 40%, 55% 40%, 55% 60%, 45% 60%);
+}
+
+#chk-burger:checked ~ #burger .burger__ligne:nth-child(3) {
+  clip-path: polygon(-7.1% 92.9%, 92.9% -7.1%, 107.1% 7.1%, 7.1% 107.1%);
+}
+
 .animation {
   display: flex;
   justify-content: space-between;

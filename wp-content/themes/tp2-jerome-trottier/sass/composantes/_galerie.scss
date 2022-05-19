@@ -1,0 +1,16 @@
+// Galerie gutenberg de la page d'accueil
+.galerie {
+    width: 100%;
+
+    img {
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    @media screen and (min-width: $largeur__media--tablette) {
+        width: 75%;
+
+    }
+}

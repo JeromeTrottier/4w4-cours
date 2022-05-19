@@ -1,0 +1,96 @@
+.boite__modal, .boite__carrousel{
+    transform: scale(0);
+    transition: 0.5s ease-out;
+}
+.boite__modal.ouvert, .boite__carrousel.ouvert{
+    transform: scale(1);
+    position: fixed;
+    background: rgba(0,0,0,0.5);
+    border: 10px solid $couleur__boite-modal;
+    background-color: $couleur__boite-modal-background;
+
+    
+    z-index: 100;
+    
+    &:hover {
+        box-shadow: 0px 0px 10px grey;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.boite__modal {
+    height: 50%;
+    left: 25%;
+    width: 50%;
+    top : 25%;
+}
+.boite__carrousel {
+    overflow: hidden;
+    .boite__carrousel__img {
+        transition: 0.5s;
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        object-fit: cover;
+        height: 100%;
+        img {
+            display: block;
+            z-index: -1;
+            object-fit: cover;
+            height: 100%;
+        }
+    }
+    
+    height: 75%;
+    left: 12.5%;
+    width: 75%;
+    top : 12.5%;
+    > button {
+        cursor: pointer;
+        background-color: $color__link;
+        border: 1px solid black;
+        color: $couleur__boite-modal;
+        font-size: 2em;
+        transition: 0.2s ease-out;
+        &:hover {
+            background-color: $couleur__boite-modal;
+            color: $couleur__boite-modal-background;
+        }
+        &:focus {
+            background-color: black;
+        }
+    }
+    
+    &__navigation {
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        z-index: 1;
+        button {
+            cursor: pointer;
+            margin: 1rem 0.5rem;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: $couleur__boite-modal-background;
+            border: 1px solid black;
+            color: $couleur__boite-modal;
+            font-size: 2em;
+            transition: 0.2s ease-out;
+            &:hover {
+                background-color: $couleur__boite-modal;
+                color: $couleur__boite-modal-background;
+            }
+            &:focus {
+                background-color: black;
+            }
+        }
+    }
+}
